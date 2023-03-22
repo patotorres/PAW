@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Centro Médico PAW</title>
-	<link rel="stylesheet" href="estilos.css"/>
-</head>
-<body>
-	<header>
-		<h1 style="display: flex; align-items: center;">
-			<img src="img/logo.png" width="96px" height="96px"/>
-			Centro Médico PAW
-		</h1>
-		<!--acá -->
-		<nav class="navbar">
-			<ul class="nav-menu">
-				<li><a href="#turnos" class="nav-links">Turnos</a></li>
-				<li><a href="#institucional" class="nav-links">Institucional</a></li>
-				<li><a href="#noticias" class="nav-links">Noticias</a></li>
-				<li><a href="#obra-social" class="nav-links">Obra Social</a></li>
-				<li><a href="#especialidades-profesionales" class="nav-links">Especialidades y profesionales</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="servicios">
-			<h2>Servicios</h2>
-			<ul>
-				<li>Cardiología</li>
-				<li>Ginecología</li>
-				<li>Oftalmología</li>
-				<li>Pediatría</li>
-				<li>Psicología</li>
-			</ul>
-			<a href="#contacto">Solicitar turno</a>
-		</section>
-		<section id="equipo">
-			<h2>Equipo</h2>
-			<ul>
-				<li>Dr. Juan Pérez - Cardiólogo</li>
-				<li>Dra. Ana Rodríguez - Ginecóloga</li>
-				<li>Dr. Luis García - Oftalmólogo</li>
-				<li>Dra. María Fernández - Pediatra</li>
-				<li>Psicóloga Laura Sánchez - Psicología</li>
-			</ul>
-		</section>
-		<section id="contacto">
-			<h2>Contacto</h2>
-			<form>
-				<label for="nombre">Nombre:</label>
-				<input type="text" id="nombre" name="nombre"><br>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Centro Médico PAW</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="img/logo.png" width="96px" height="96px" />
+        Centro Médico PAW
+        <form>
+          <input type="text" placeholder="Buscar ..." />
+          <button type="submit">Buscar</button>
+        </form>
+      </h1>
+      <!--navbar-->
+      <nav>
+        <ul>
+          <li><a href="#turnos">Turnos</a></li>
+          <li><a href="#institucional">Institucional</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#obra-social">Obra Social</a></li>
+          <li>
+            <a href="#especialidades-profesionales"
+              >Especialidades y profesionales</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Solicite su turno</h2>
+        <p>Contenido del solicite su turno.</p>
+      </section>
 
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email"><br>
+      <section>
+        <h2>Noticias</h2>
+        <p>Contenido de la sección Noticias.</p>
+      </section>
 
-				<label for="telefono">Teléfono:</label>
-				<input type="tel" id="telefono" name="telefono"><br>
-
-				<label for="mensaje">Mensaje:</label>
-				<textarea id="mensaje" name="mensaje"></textarea><br>
-
-				<button type="submit">Enviar</button>
-			</form>
-		</section>
-	</main>
-	<footer>
-		<p>Centro Médico XYZ - Todos los derechos reservados</p>
-	</footer>
-</body>
+      <section>
+        <h2>Donde nos podés encontrar</h2>
+        <p>Contenido de la sección Donde nos podés encontrar.</p>
+      </section>
+	  <section>
+        <h2>¿Por qué elegirnos?</h2>
+        <p>Contenido de la sección ¿Por qué elegirnos?.</p>
+      </section>
+    </main>
+    <footer>
+      <p>Avalado por</p>
+      <img src="img/certificado" width="96" height="96" />
+      <p>Centro Médico PAW - Contacto</p>
+      <ul>
+        <li>Correo electrónico: juanperez@email.com</li>
+        <li>Teléfono: +1 (555) 555-5555</li>
+        <li>Dirección: 123 Calle Principal, Luján, 6700</li>
+      </ul>
+      <p>Redes</p>
+      <ul>
+        <img src="img/instagram" width="48" height="48" />
+        <img src="img/twitter" width="48" height="48" />
+        <img src="img/facebook" width="48" height="48" />
+      </ul>
+    </footer>
+  </body>
 </html>
