@@ -44,15 +44,54 @@
   </nav>
   <!--navbar-->
   <!--body-->
-  <main>
-    
+  <main><h2>Solicitar Turno</h2>
+    <hr />
+    <section>
+      <form>
+        <label>Nombre y apellido:</label>
+        <input type="text" placeholder="juan perez"/>
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="juanpe@gmail.com"/>
+        <label>DNI</label>
+        <input type="text" placeholder="34111111"/>
+        <label>Teléfono:</label>
+        <input type="tel" placeholder="2323 123456"/>
+        <label>Fecha de nacimiento:</label>
+        <input type="date"/>
+        <label>Fecha del turno</label>
+        <input type="date"/>
+        <label>Hora del turno</label>
+        <input type="time"/>
+        <p for="Especialidad">Escoja una especialidad</p>
+        <select>
+          <option value=""selected hidden disabled>Seleccione</option>
+          <option value="Psiquiatria">Psiquiatria</option>
+          <option value="Ortopedia">Ortopedia</option>
+          <option value="Neurologia">Neurologia</option>
+          <option value="Cardiologia">Cardiologia</option>
+        </select>
+        <p for="Profesional">Escoja un/a profesional</p>
+        <select>
+          <option value=""selected hidden disabled>Seleccione</option>
+          <option value="AnaGarcia">Dra. Ana García</option>
+          <option value="JorgeMartinez">Dr. Jorge Martínez</option>
+          <option value="VeroSanchez">Dra. Verónica Sánchez</option>
+          <option value="JuanRodriguez">Dr. Juan Rodríguez</option>
+        </select>
+        <p>Fechas disponibles</p>
+        <input type="date"/>
+        <input type="button" value="Confirmar"/>
+      </form>
+      <input type="button" onclick="document.location.href='index.html'" name="Cancelar" value="Cancelar"> 
+    </section>
   </main>
 </body>
 <!--body-->
 <!--footer-->
 <footer>
   <p>Avalado por</p>
-  <a href="https://www.argentina.gob.ar/salud"target=_blank><img src="img/certificado.png" width="96" height="96" /></a>
+  <a href="https://www.argentina.gob.ar/salud" target=_blank><img src="img/certificado.png" width="96"
+      height="96" /></a>
   <p>Centro Médico PAW - Contacto</p>
   <ul>
     <li>Correo electrónico: juanperez@email.com</li>
@@ -61,9 +100,9 @@
   </ul>
   <p>Redes</p>
   <ul>
-    <a href="https://instagram.com"target=_blank><img src="img/instagram.png" width="48" height="48" /></a>
-    <a href="https://twitter.com"target=_blank><img src="img/twitter.png" width="48" height="48" /></a>
-    <a href="https://facebook.com"target=_blank><img src="img/facebook.png" width="48" height="48" /></a>
+    <a href="https://instagram.com" target=_blank><img src="img/instagram.png" width="48" height="48" /></a>
+    <a href="https://twitter.com" target=_blank><img src="img/twitter.png" width="48" height="48" /></a>
+    <a href="https://facebook.com" target=_blank><img src="img/facebook.png" width="48" height="48" /></a>
   </ul>
 </footer>
 <!--footer-->
