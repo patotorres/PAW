@@ -1,5 +1,5 @@
-# Programación en ambiente web - grupo3
-Integrantes
-    Scafati Salvador
-    Simone Federico
-    Torres Patricio
+# grupo3-Programación en ambiente web
+### *Integrantes*
+    -Scafati Salvador
+    -Simone Federico
+    -Torres Patricio
