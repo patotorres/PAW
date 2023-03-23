@@ -1,4 +1,4 @@
-# grupo3-Programación en ambiente web
+# Programación en ambiente web - grupo3
 Integrantes
     Scafati Salvador
     Simone Federico
