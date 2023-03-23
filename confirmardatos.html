@@ -44,46 +44,33 @@
   </nav>
   <!--navbar-->
   <!--body-->
-  <main><h2>Solicitar Turno</h2>
+  <main><h2>Confirmar datos</h2>
     <hr />
     <section>
-      <form action="confirmardatos.html">
-        <label>Nombre y apellido:</label>
-        <input type="text" placeholder="juan perez"/>
-        <label>Correo electrónico</label>
-        <input type="email" placeholder="juanpe@gmail.com"/>
-        <label>DNI</label>
-        <input type="text" placeholder="34111111"/>
-        <label>Teléfono:</label>
-        <input type="tel" placeholder="2323 123456"/>
-        <label>Fecha de nacimiento:</label>
-        <input type="date"/>
-        <label>Fecha del turno</label>
-        <input type="date"/>
-        <label>Hora del turno</label>
-        <input type="time"/>
-        <p for="Especialidad">Escoja una especialidad</p>
-        <select>
-          <option value=""selected hidden disabled>Seleccione</option>
-          <option value="Psiquiatria">Psiquiatria</option>
-          <option value="Ortopedia">Ortopedia</option>
-          <option value="Neurologia">Neurologia</option>
-          <option value="Cardiologia">Cardiologia</option>
-        </select>
-        <p for="Profesional">Escoja un/a profesional</p>
-        <select>
-          <option value=""selected hidden disabled>Seleccione</option>
-          <option value="AnaGarcia">Dra. Ana García</option>
-          <option value="JorgeMartinez">Dr. Jorge Martínez</option>
-          <option value="VeroSanchez">Dra. Verónica Sánchez</option>
-          <option value="JuanRodriguez">Dr. Juan Rodríguez</option>
-        </select>
-        <p>Fechas disponibles</p>
-        <input type="date"/>
-        <input type="submit" value="Confirmar"/>
-      </form>
-      <input type="button" onclick="document.location.href='index.html'" name="Cancelar" value="Cancelar"> 
-    </section>
+        <form action="solicitarturno.html">
+          <label>Nombre y apellido:</label>
+          <p>juan perez</p> 
+          <label>Correo electrónico:</label>
+          <p>juanpe@gmail.com</p>
+          <label>DNI:</label>
+          <p>34111111</p>
+          <label>Teléfono:</label>
+          <p>2323 123456</p>
+          <label>Fecha de nacimiento:</label>
+          <p>31/03/98</p>
+          <label>Fecha del turno:</label>
+          <p>31/03/23</p>
+          <label>Hora del turno:</label>
+          <p>09:00</p>
+          <p>Especialidad:</p>
+            <p>Psiquiatria</p>
+          <p>Profesional:</p>
+            <p>JorgeMartinez</p>
+          <input type="button" value="Confirmar"/>
+          <input type="submit" value="Modificar datos"/>
+        </form>
+        <input type="button" onclick="document.location.href='index.html'" name="Cancelar" value="Cancelar"> 
+      </section>
   </main>
 </body>
 <!--body-->
