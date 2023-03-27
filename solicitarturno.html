@@ -59,21 +59,23 @@
         <label>Fecha de nacimiento:</label>
         <input type="date" tabindex="5"/>
         <p for="Especialidad">Escoja una especialidad</p>
-        <select tabindex="6">
+        <input list="listaEspecialidades" />
+        <datalist id="listaEspecialidades" tabindex="6">
           <option value=""selected hidden disabled>Seleccione</option>
           <option value="Psiquiatria">Psiquiatria</option>
           <option value="Ortopedia">Ortopedia</option>
           <option value="Neurologia">Neurologia</option>
           <option value="Cardiologia">Cardiologia</option>
-        </select>
+        </datalist>
         <p for="Profesional">Escoja un/a profesional</p>
-        <select tabindex="7">
+        <input list="listaProfesionales"/>
+        <datalist id="listaProfesionales" tabindex="7">
           <option value=""selected hidden disabled>Seleccione</option>
           <option value="AnaGarcia">Dra. Ana García</option>
           <option value="JorgeMartinez">Dr. Jorge Martínez</option>
           <option value="VeroSanchez">Dra. Verónica Sánchez</option>
           <option value="JuanRodriguez">Dr. Juan Rodríguez</option>
-        </select>
+        </datalist>
         <p>Fechas disponibles</p>
         <input type="date" tabindex="8"/>
         <label>Hora del turno</label>
