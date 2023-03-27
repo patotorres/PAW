@@ -47,19 +47,19 @@
   <main><h2>Solicitar Turno</h2>
     <hr />
     <section>
-      <form action="confirmardatos.html">
+      <form action="confirmardatos.html" tabindex="0">
         <label>Nombre y apellido:</label>
-        <input type="text" placeholder="juan perez"/>
+        <input type="text" placeholder="juan perez" tabindex="1"/>
         <label>Correo electrónico</label>
-        <input type="email" placeholder="juanpe@gmail.com"/>
+        <input type="email" placeholder="juanpe@gmail.com" tabindex="2"/>
         <label>DNI</label>
-        <input type="text" placeholder="34111111"/>
+        <input type="text" placeholder="34111111" tabindex="3"/>
         <label>Teléfono:</label>
-        <input type="tel" placeholder="2323 123456"/>
+        <input type="tel" placeholder="2323 123456" tabindex="4"/>
         <label>Fecha de nacimiento:</label>
-        <input type="date"/>
+        <input type="date" tabindex="5"/>
         <p for="Especialidad">Escoja una especialidad</p>
-        <select>
+        <select tabindex="6">
           <option value=""selected hidden disabled>Seleccione</option>
           <option value="Psiquiatria">Psiquiatria</option>
           <option value="Ortopedia">Ortopedia</option>
@@ -67,7 +67,7 @@
           <option value="Cardiologia">Cardiologia</option>
         </select>
         <p for="Profesional">Escoja un/a profesional</p>
-        <select>
+        <select tabindex="7">
           <option value=""selected hidden disabled>Seleccione</option>
           <option value="AnaGarcia">Dra. Ana García</option>
           <option value="JorgeMartinez">Dr. Jorge Martínez</option>
@@ -75,12 +75,12 @@
           <option value="JuanRodriguez">Dr. Juan Rodríguez</option>
         </select>
         <p>Fechas disponibles</p>
-        <input type="date"/>
+        <input type="date" tabindex="8"/>
         <label>Hora del turno</label>
-        <input type="time"/>
-        <input type="submit" value="Confirmar"/>
+        <input type="time" tabindex="9"/>
+        <input type="submit" value="Confirmar" tabindex="10"/>
       </form>
-      <input type="button" onclick="document.location.href='index.html'" name="Cancelar" value="Cancelar"> 
+      <input type="button" onclick="document.location.href='index.html'" name="Cancelar" value="Cancelar" tabindex="11"> 
     </section>
   </main>
 </body>
