@@ -1,138 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Centro Médico PAW</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Centro Médico PAW</title>
+  </head>
 
-<body>
-  <!--header-->
-  <header>
-    <h1>
-      <a href="index.html"><img src="img/logo.png" width="96px" height="96px" />
-        Centro Médico PAW
-      </a>
-      <form>
-        <input type="search" placeholder="Buscar ..." />
-        <button type="submit">Buscar</button>
-      </form>
-    </h1>
-  </header>
-  <!--header-->
-  <!--navbar-->
-  <nav>
-    <ul>
-      <li>
-        <a>Turnos</a>
+  <body>
+    <!--header-->
+    <header>
+      <h1>
+        <a href="index.html"><img src="img/logo.png" width="96px" height="96px" />
+          Centro Médico PAW
+        </a>
+        <form>
+          <input type="search" placeholder="Buscar ..." />
+          <button type="submit">Buscar</button>
+        </form>
+      </h1>
+    </header>
+    <!--header-->
+    <!--navbar-->
+    <nav>
+      <ul>
+        <li>
+          <a>Turnos</a>
+          <ul>
+            <li><a href="consultarturno.html">Consultar Turno</a></li>
+            <li><a href="solicitarturno.html">Solicitar Turnos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Institucional</a>
+          <ul>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="valores.html">Valores</a></li>
+          </ul>
+        </li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="obra-social.html">Obra Social</a></li>
+        <li><a href="especialidades-profesionales.html">Especialidades y profesionales</a></li>
+      </ul>
+    </nav>
+    <!--navbar-->
+    <!--body-->
+    <main>
+      <!--secciones-->
+      <section>
+        <!--necesito usar form para pedir los datos--> 
+        <h2>Solicite su turno</h2>
+        <form action="solicitarturno.html" tabindex="0">
+          <label>Nombre y Apellido</label>
+          <input type="text" placeholder="Ej: Pedro alvarez" tabindex="1"/>
+          <label>Dirección de correo electrónico</label>
+          <input type="text" placeholder="Ej: Pedrialva@gmail.com" tabindex="2"/>
+          <label for="listaEspecialidades">Escoja una especialidad</label>
+          <input list="listaEspecialidades" />
+          <datalist id="listaEspecialidades" tabindex="3">
+            <option value=""selected hidden disabled>Seleccione</option>
+            <option value="Psiquiatria">Psiquiatría</option>
+            <option value="Ortopedia">Ortopedía</option>
+            <option value="Neurologia">Neurología</option>
+            <option value="Cardiologia">Cardiología</option>
+          </datalist>
+          <label for="listaProfesionales">Escoja un/a profesional</label>
+          <input list="listaProfesionales"/>
+          <datalist id="listaProfesionales" tabindex="4">
+            <option value=""selected hidden disabled>Seleccione</option>
+            <option value="Dra. Ana García">Dra. Ana García</option>
+            <option value="Dr. Jorge Martínez">Dr. Jorge Martínez</option>
+            <option value="Dra. Verónica Sánchez">Dra. Verónica Sánchez</option>
+            <option value="Dr. Juan Rodríguez">Dr. Juan Rodríguez</option>
+          </datalist>
+          <label>Fechas disponibles</label>
+          <input type="date" tabindex="5"/>
+        <!--
+        <select id="fecha" name="fecha">
+                  <option value=""selected hidden disabled>Seleccione</option>
+                  <option value="2023-04-01">1 de abril de 2023</option>
+                  <option value="2023-04-02">2 de abril de 2023</option>
+                  <option value="2023-04-03">3 de abril de 2023</option>
+                  <option value="2023-04-04">4 de abril de 2023</option>
+                  <option value="2023-04-05">5 de abril de 2023</option>
+                </select>
+               -->
+          <input type="submit" value="Continuar" tabindex="6"/>
+        </form>
+      </section>
+
+      <section>
+        <h2>Noticias</h2>
         <ul>
-          <li><a href="consultarturno.html">Consultar Turno</a></li>
-          <li><a href="solicitarturno.html">Solicitar Turnos</a></li>
+          <li>
+            <!--necesito poner dentro de la seccion articulos, 2 por ejemplo-->
+            <a href="noticias.html" target="_blank"><img src="img/noticiaej.png" width="48" height="48" />Noticia ejemplo</a>
+          </li>
+          <li>
+            <a href="noticias.html" target="_blank"><img src="img/noticiaej.png" width="48" height="48" />Noticia ejemplo</a>
+          </li>
         </ul>
-      </li>
-      <li>
-        <a>Institucional</a>
-        <ul>
-          <li><a href="staff.html">Staff</a></li>
-          <li><a href="valores.html">Valores</a></li>
-        </ul>
-      </li>
-      <li><a href="noticias.html">Noticias</a></li>
-      <li><a href="obra-social.html">Obra Social</a></li>
-      <li><a href="especialidades-profesionales.html">Especialidades y profesionales</a></li>
-    </ul>
-  </nav>
-  <!--navbar-->
+      </section>
+
+      <section>
+        <h2>Donde nos podés encontrar</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.060752478424!2d-59.093086973046894!3d-34.57732929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc877639af966d%3A0x937cf2a3a61e9b56!2sUniversidad%20Nacional%20de%20Luj%C3%A1n!5e0!3m2!1ses-419!2sar!4v1679530400843!5m2!1ses-419!2sar"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+
+      <section>
+        <h2>¿Por qué elegirnos?</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis veritatis repellendus sint numquam vitae dolores pariatur voluptatem iste consequatur incidunt ea ad, voluptas quo quibusdam impedit quam quasi corporis doloremque!</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aahyZICBe90" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </section>
+    </main>
+  </body>
   <!--body-->
-  <main>
-    <!--secciones-->
-    <section>
-      <!--necesito usar form para pedir los datos--> 
-      <h2>Solicite su turno</h2>
-      <form action="solicitarturno.html" tabindex="0">
-        <p>Nombre y Apellido</p>
-        <input type="text" placeholder="Ej: Pedro alvarez" tabindex="1"/>
-        <p>Dirección de correo electrónico</p>
-        <input type="text" placeholder="Ej: Pedrialva@gmail.com" tabindex="2"/>
-        <p for="Especialidad">Escoja una especialidad</p>
-        <input list="listaEspecialidades" />
-        <datalist id="listaEspecialidades" tabindex="3">
-          <option value=""selected hidden disabled>Seleccione</option>
-          <option value="Psiquiatria">Psiquiatria</option>
-          <option value="Ortopedia">Ortopedia</option>
-          <option value="Neurologia">Neurologia</option>
-          <option value="Cardiologia">Cardiologia</option>
-        </datalist>
-        <p for="Profesional">Escoja un/a profesional</p>
-        <input list="listaProfesionales"/>
-        <datalist id="listaProfesionales" tabindex="4">
-          <option value=""selected hidden disabled>Seleccione</option>
-          <option value="Dra. Ana García">Dra. Ana García</option>
-          <option value="Dr. Jorge Martínez">Dr. Jorge Martínez</option>
-          <option value="Dra. Verónica Sánchez">Dra. Verónica Sánchez</option>
-          <option value="Dr. Juan Rodríguez">Dr. Juan Rodríguez</option>
-        </datalist>
-        <p>Fechas disponibles</p>
-        <input type="date" tabindex="5"/>
-      <!--
-      <select id="fecha" name="fecha">
-                <option value=""selected hidden disabled>Seleccione</option>
-                <option value="2023-04-01">1 de abril de 2023</option>
-                <option value="2023-04-02">2 de abril de 2023</option>
-                <option value="2023-04-03">3 de abril de 2023</option>
-                <option value="2023-04-04">4 de abril de 2023</option>
-                <option value="2023-04-05">5 de abril de 2023</option>
-              </select>
-             -->
-        <input type="submit" value="Continuar" tabindex="6"/>
-      </form>
-    </section>
-
-    <section>
-      <h2>Noticias</h2>
-      <!--necesito poner dentro de la seccion articulos, 2 por ejemplo--> 
-      <a href="noticias.html" target="_blank"><img src="img/noticiaej.png" width="48" height="48" />Noticia ejemplo</a>
-      <a href="noticias.html" target="_blank"><img src="img/noticiaej.png" width="48" height="48" />Noticia ejemplo</a>
-    </section>
-
-    <section>
-      <h2>Donde nos podés encontrar</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.060752478424!2d-59.093086973046894!3d-34.57732929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc877639af966d%3A0x937cf2a3a61e9b56!2sUniversidad%20Nacional%20de%20Luj%C3%A1n!5e0!3m2!1ses-419!2sar!4v1679530400843!5m2!1ses-419!2sar"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </section>
-
-    <section>
-      <h2>¿Por qué elegirnos?</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis veritatis repellendus sint numquam vitae dolores pariatur voluptatem iste consequatur incidunt ea ad, voluptas quo quibusdam impedit quam quasi corporis doloremque!</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/aahyZICBe90" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
-    </section>
-  </main>
-</body>
-<!--body-->
-<!--footer-->
-<footer>
-  <p>Avalado por</p>
-  <a href="https://www.argentina.gob.ar/salud"target=_blank><img src="img/certificado.png" width="96" height="96" /></a>
-  <p>Centro Médico PAW - Contacto</p>
-  <ul>
-    <li>Correo electrónico: juanperez@email.com</li>
-    <li>Teléfono: +1 (555) 555-5555</li>
-    <li>Dirección: 123 Calle Principal, Luján, 6700</li>
-  </ul>
-  <p>Redes</p>
-  <ul>
-    <a href="https://instagram.com"target=_blank><img src="img/instagram.png" width="48" height="48" /></a>
-    <a href="https://twitter.com"target=_blank><img src="img/twitter.png" width="48" height="48" /></a>
-    <a href="https://facebook.com"target=_blank><img src="img/facebook.png" width="48" height="48" /></a>
-  </ul>
-</footer>
-<!--footer-->
+  <!--footer-->
+  <footer>
+    <p>Avalado por</p>
+    <a href="https://www.argentina.gob.ar/salud"target=_blank><img src="img/certificado.png" width="96" height="96" /></a>
+    <p>Centro Médico PAW - Contacto</p>
+    <ul>
+      <li>Correo electrónico: juanperez@email.com</li>
+      <li>Teléfono: +1 (555) 555-5555</li>
+      <li>Dirección: 123 Calle Principal, Luján, 6700</li>
+    </ul>
+    <p>Redes</p>
+    <ul>
+      <a href="https://instagram.com"target=_blank><img src="img/instagram.png" width="48" height="48" /></a>
+      <a href="https://twitter.com"target=_blank><img src="img/twitter.png" width="48" height="48" /></a>
+      <a href="https://facebook.com"target=_blank><img src="img/facebook.png" width="48" height="48" /></a>
+    </ul>
+  </footer>
+  <!--footer-->
 
 </html>
