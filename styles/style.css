@@ -150,3 +150,44 @@ BARRA DE NAVEGACION
 FORMULARIO
 -----------------------------
 */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    font-family: 'gotham','sans-serif';
+    align-items: center;
+}
+
+
+.formulario form{
+    
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario h2{
+    color: #389A9C;
+    align-content: end;
+}
+
+.formulario form label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+.formulario input[type="submit"]{
+    margin-top: 10px;  
+    margin-bottom: 5px;   
+    width:fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 70%;
+    font-weight: bold;
+    background-color: #389A9C;
+    color: white;
+    border: 0;
+
+}
