@@ -43,7 +43,7 @@ header h1 {
     right: 15px;
 }
 
-.Buscardor input[type="text"]::placeholder {
+.Buscador input[type="text"]::placeholder {
     display: inline;
     color: gray;
     font-style: italic;
