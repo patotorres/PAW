@@ -3,36 +3,36 @@
 
   <head>
     <meta charset="UTF-8" />
-    <title>Centro Médico PAW</title>
+    <title>UNLu PAW UL Hospitals</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
   </head>
 
   <body>
     <!--header-->
     <header>
       <h1>
-        <a href="index.html"><img src="img/logo.png" width="96px" height="96px" />
-          Centro Médico PAW
-        </a>
-        <form>
-          <input type="search" placeholder="Buscar ..." />
-          <button type="submit">Buscar</button>
+        <a href="index.html"></a>
+        <form class="Buscador">
+          <input type="text" id="search" name="search" placeholder="Escribe aquí tu búsqueda" class="search-box"/>
+          <input type="submit" value="&#128269;" class="search-box"/>
         </form>
       </h1>
     </header>
     <!--header-->
     <!--navbar-->
-    <nav>
+    <nav class="navbar">
       <ul>
-        <li>
+        <li class ="navbarDropOption">
           <a>Turnos</a>
           <ul>
             <li><a href="consultarturno.html">Consultar Turno</a></li>
             <li><a href="solicitarturno.html">Solicitar Turnos</a></li>
           </ul>
         </li>
-        <li>
+        <li class ="navbarDropOption">
           <a>Institucional</a>
-          <ul>
+          <ul class ="navbarDropOption">
             <li><a href="staff.html">Staff</a></li>
             <li><a href="valores.html">Valores</a></li>
           </ul>
@@ -46,7 +46,7 @@
     <!--body-->
     <main><h2>Solicitar Turno</h2>
       <hr />
-      <form action="confirmardatos.html" tabindex="0">
+      <form class="form-turno"action="confirmardatos.html" tabindex="0">
         <label>Nombre y apellido:</label>
         <input type="text" placeholder="juan perez" tabindex="1"/>
         <label>Correo electrónico</label>
@@ -83,26 +83,30 @@
       </form>
       <input type="button" onclick="document.location.href='index.html'" name="Cancelar" value="Cancelar" tabindex="11">
     </main>
+    <!--body-->
+    <!--footer-->
+    <footer>
+      <li class="certificadoFooter">
+        <p>Avalado por</p>
+        <a class="logoCertificadoFooter" href="https://www.argentina.gob.ar/salud"target=_blank></a>    
+      </li>
+      <li class="contactoFooter">
+        <p>UNLu PAW UL Hospitals - Contacto</p>
+        <ul>
+          <li>Correo electrónico: juanperez@email.com</li>
+          <li>Teléfono: +1 (555) 555-5555</li>
+          <li>Dirección: 123 Calle Principal, Luján, 6700</li>
+        </ul>
+      </li>
+      <li class="redesFooter">
+        <p>Redes</p>
+        <ul>
+          <a href="https://instagram.com"target=_blank><img src="img/instagram.png" width="48" height="48" /></a>
+          <a href="https://twitter.com"target=_blank><img src="img/twitter.png" width="48" height="48" /></a>
+          <a href="https://facebook.com"target=_blank><img src="img/facebook.png" width="48" height="48" /></a>
+        </ul>
+      </li>
+    </footer>
+    <!--footer-->
   </body>
-  <!--body-->
-  <!--footer-->
-  <footer>
-    <p>Avalado por</p>
-    <a href="https://www.argentina.gob.ar/salud" target=_blank><img src="img/certificado.png" width="96"
-        height="96" /></a>
-    <p>Centro Médico PAW - Contacto</p>
-    <ul>
-      <li>Correo electrónico: juanperez@email.com</li>
-      <li>Teléfono: +1 (555) 555-5555</li>
-      <li>Dirección: 123 Calle Principal, Luján, 6700</li>
-    </ul>
-    <p>Redes</p>
-    <ul>
-      <a href="https://instagram.com" target=_blank><img src="img/instagram.png" width="48" height="48" /></a>
-      <a href="https://twitter.com" target=_blank><img src="img/twitter.png" width="48" height="48" /></a>
-      <a href="https://facebook.com" target=_blank><img src="img/facebook.png" width="48" height="48" /></a>
-    </ul>
-  </footer>
-  <!--footer-->
-
 </html>

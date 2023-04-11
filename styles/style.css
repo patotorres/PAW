@@ -283,6 +283,17 @@ Donde nos podés encontrar
 }
 /*
 -----------------------------
+SolicitarTurno
+-----------------------------
+*/
+.form-turno datalist, input{
+    display: flex;
+    margin: 10px;
+}
+
+
+/*
+-----------------------------
 FOOTER
 -----------------------------
 */
