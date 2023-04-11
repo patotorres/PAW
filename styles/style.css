@@ -206,6 +206,7 @@ footer{
     margin: 0;
     padding: 0.01px; /*para que no haya espacios en blanco debajo del footer*/
     display: flex;
+    text-align: center;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -214,8 +215,10 @@ footer{
     display:flex;
     flex-direction: column;
     color: #eef1ef;
+    margin-left: 5%;
 }
 .contactoFooter{
+    text-align: start;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -227,5 +230,13 @@ footer{
     justify-content: space-between;
     align-items: center;
     color: #eef1ef;
+    margin-right: 5%;
 
+}
+.logoCertificadoFooter{
+    background-image: url("../img/Ministerio_de_Salud.png");
+    aspect-ratio: 3.5;
+    width: 175px;
+    background-size: 100%;
+    background-repeat: no-repeat;    
 }
