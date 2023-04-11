@@ -32,7 +32,7 @@ HEADER - BUSCADOR - LOGO
 header{
     width: 100%;
     position: relative;
-    background-color:#025255;
+    background-color:#eef1ef;
 }
 header a{
     font-family: 'Gotham', sans-serif;
@@ -59,7 +59,6 @@ header h1 {
 .Buscador input[type="text"]::placeholder {
     display: inline;
     color: black;
-    background-color: #fcc444;
     font-style: italic;
     padding-left: 5px; 
 }
@@ -97,7 +96,7 @@ BARRA DE NAVEGACION
 
 
 .navbar {
-    background-color:#009dda;
+    background-color:#025255;
     margin: 0%;
     width: 100%;
     height: 55px;
@@ -124,7 +123,7 @@ BARRA DE NAVEGACION
 
 .navbarDropOption ul{
     display: none;
-    background-color:#389A9C;
+    background-color:#025255;
 }
 
 .navbarDropOption li{
@@ -186,11 +185,22 @@ FORMULARIO
     margin-bottom: 5px;   
     width:fit-content;
     padding: 10px;
-    border-radius: 5px;
-    margin-left: 70%;
+    margin-left: 83%;
     font-weight: bold;
-    background-color: #389A9C;
+    background-color: #025255;
     color: white;
     border: 0;
 
 }
+
+/*
+-----------------------------
+FOOTER
+-----------------------------
+*/
+footer{
+    width: 100%;
+    position: relative;
+    background-color:#025255;
+}
+
