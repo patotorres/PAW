@@ -2,6 +2,7 @@ body{
     width: 100%;
     margin: 0%;
     background-color: #eef1ef;
+    font-family: 'Gotham'
 }
 /*
 paleta de colores: los colores primarios deben predominar en la web
@@ -202,5 +203,29 @@ footer{
     width: 100%;
     position: relative;
     background-color:#025255;
+    margin: 0;
+    padding: 0.01px; /*para que no haya espacios en blanco debajo del footer*/
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
+.certificadoFooter{
+    display:flex;
+    flex-direction: column;
+    color: #eef1ef;
+}
+.contactoFooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #eef1ef;
+}
+.redesFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #eef1ef;
+
+}
