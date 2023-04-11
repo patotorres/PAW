@@ -1,17 +1,27 @@
 body{
     width: 100%;
     margin: 0%;
+    background-color: #eef1ef;
 }
 /*
-paleta de colores:
+paleta de colores: los colores primarios deben predominar en la web
+y mas aun el color verde, ese es nuestro color main
 primarios
 =================
-verde #1d4f50
-Amarillo #fdc427
-Rojo #d34240
-Azul #219ddc
-blanco 
-
+verde -> #025255 
+Amarillo -> #fcc444
+Rojo -> #d0244a
+Azul -> #009dda
+================
+Complementarios
+================
+marron claro -> #a04928
+marron oscuro -> #5b2b19
+celeste -> #87d3e2
+verde claro -> #718839
+gris oscuro -> #3b4a5a
+gris claro -> #eef1ef
+================
 */
 
 /*
@@ -21,19 +31,14 @@ HEADER - BUSCADOR - LOGO
 */
 header{
     width: 100%;
-    /*height: 160px;*/
     position: relative;
-    background-color:white;
+    background-color:#025255;
 }
 header a{
-    color:#309C61;
     font-family: 'Gotham', sans-serif;
     text-decoration: none;
     background-image: url("../img/Imagotipo_PAW_Hospitals.svg");
     display: inline-block;
-    /*
-    height: 78px;
-    */
     aspect-ratio: 2.25;
     width: 250px;
     background-size: 100%;
@@ -49,20 +54,18 @@ header h1 {
     position: absolute;
     bottom: 20px;
     right: 15px;
-   
 }
 
 .Buscador input[type="text"]::placeholder {
     display: inline;
     color: black;
-    background-color: #fdc42791;
+    background-color: #fcc444;
     font-style: italic;
     padding-left: 5px; 
 }
 
 
 .Buscador input[type="text"] {
-    border-radius: 5px;
     padding-left: 5px; 
     transition: 1s;
 }
@@ -83,7 +86,7 @@ header h1 {
 }
 
 .Buscador input[type="text"]:focus {
-    background-color: #fdc427;
+    background-color: #fcc444;
 }
 
 /*
@@ -94,7 +97,7 @@ BARRA DE NAVEGACION
 
 
 .navbar {
-    background-color:#1d4f50;
+    background-color:#009dda;
     margin: 0%;
     width: 100%;
     height: 55px;
@@ -168,7 +171,7 @@ FORMULARIO
 }
 
 .formulario h2{
-    color: #389A9C;
+    color: #009dda;
     align-content: end;
 }
 
