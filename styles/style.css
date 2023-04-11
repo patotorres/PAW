@@ -1,4 +1,4 @@
-body{
+body {
     width: 100%;
     margin: 0%;
     background-color: #eef1ef;
@@ -30,12 +30,13 @@ gris claro -> #eef1ef
 HEADER - BUSCADOR - LOGO
 -----------------------------
 */
-header{
+header {
     width: 100%;
     position: relative;
-    background-color:#eef1ef;
+    background-color: #eef1ef;
 }
-header a{
+
+header a {
     font-family: 'Gotham', sans-serif;
     text-decoration: none;
     background-image: url("../img/Imagotipo_PAW_Hospitals.svg");
@@ -50,7 +51,7 @@ header h1 {
     margin: 0;
 }
 
-.Buscador{
+.Buscador {
     display: flex;
     position: absolute;
     bottom: 20px;
@@ -64,14 +65,12 @@ header h1 {
     padding-left: 5px; 
 }
 
-
 .Buscador input[type="text"] {
     padding-left: 5px; 
     transition: 1s;
 }
 
-
-.Buscador input[type="submit"]{
+.Buscador input[type="submit"] {
     cursor: pointer;
     display: inline;
 }
@@ -100,7 +99,7 @@ BARRA DE NAVEGACION
     background-color:#025255;
     margin: 0%;
     width: 100%;
-    height: 55px;
+    height: 3em;
     padding-top: 1px;
     overflow: visible;
     box-shadow: 0px 8px 9px -8px rgba(0,0,0,0.75);
@@ -108,38 +107,38 @@ BARRA DE NAVEGACION
     -moz-box-shadow: 0px 8px 9px -8px rgba(0,0,0,0.75);
 }
 
-.navbar  ul{ 
+.navbar ul { 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
     padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
-.navbar  a{
-    color:white;
+.navbar a {
+    color: white;
     font-family: 'Gotham', sans-serif;
     text-decoration: none;
 }
 
-.navbarDropOption ul{
+.navbarDropOption ul {
     display: none;
     background-color:#025255;
 }
 
-.navbarDropOption li{
+.navbarDropOption li {
     width: auto;
     padding: 10px;
 }
 
-.navbarDropOption a:hover +ul,.navbarDropOption ul:hover{
+.navbarDropOption a:hover +ul, .navbarDropOption ul:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0%;
     position: absolute;
-    
-  
 }
 
 .navbarDropOption ul:hover  ~  a  {
@@ -152,9 +151,9 @@ BARRA DE NAVEGACION
 BODY osea MAIN
 -----------------------------
 */
-main{
+main {
     margin: 10%;
-    margin-top: 0%;
+    margin-top: 0;
 }
 
 /*
@@ -163,7 +162,7 @@ FORMULARIO
 -----------------------------
 */
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     font-family: 'gotham','sans-serif';
@@ -171,29 +170,28 @@ FORMULARIO
 }
 
 
-.formulario form{
-    
+.formulario form {
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.formulario h2{
+.formulario h2 {
     color: #009dda;
     align-content: end;
 }
 
-.formulario form label{
+.formulario form label {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: small;
 }
 
-.formulario input[type="submit"]{
+.formulario input[type="submit"] {
     margin-top: 10px;  
     margin-bottom: 5px;   
-    width:fit-content;
+    width: fit-content;
     padding: 10px;
     align-self: end;
     font-weight: bold;
@@ -210,33 +208,47 @@ NOTICIAS
 .noticias {
     float: inline-start;
 }
-.noticias h2{
+
+.noticias h2 {
     text-align: center;
     color: #009dda;
 }
-.noticias ul{
+
+.noticias ul {
     list-style: none;
     max-height: 300px;
     overflow-y: auto;
     padding-left: initial;
+    margin: 0;
 }
-.noticias a{
+
+.noticias a {
     text-decoration: none;
 }
-.noticias h3{
+
+.noticias article {
+    min-height: 150px;
+}
+
+.noticias h3 {
     background-color: #eef1ef;
     color: #025255;
-    margin-bottom: 5px;
-    padding: 10px;
+    margin: 0;
+    padding: 20px 0;
 }
-.noticias img{
+
+.noticias img {
     width: 100px;
     height: 100px;
+    float: left;
+    margin: 0 0.75em 0.75em 2em
 }
-.noticias p{
+
+.noticias p {
     color: #025255;
     font-size: 18px;
     vertical-align: text-top;
+    margin: 0 1em;
 }
 
 
@@ -245,11 +257,11 @@ NOTICIAS
 Donde nos podés encontrar
 -----------------------------
 */
-.ubicacion{
+.ubicacion {
     float: inline-end;
 }
 
-.ubicacion h2{
+.ubicacion h2 {
     text-align: center;
     color: #009dda;
 }
@@ -262,29 +274,33 @@ Donde nos podés encontrar
 ¿Por qué elegirnos?
 -----------------------------
 */
-.elegirnos{
+.elegirnos {
     float:inline-end;
 }
-.elegirnos h2{
+
+.elegirnos h2 {
     text-align: center;
     color: #009dda;
 }
-.elegirnos p{
+
+.elegirnos p {
     color: #025255;
     font-size: 18px;
     vertical-align: text-top;
 }
-.elegirnos iframe{
+
+.elegirnos iframe {
     align-self: center;
     width: 100%;
     margin: auto;
 }
+
 /*
 -----------------------------
 SolicitarTurno
 -----------------------------
 */
-.form-turno datalist, input{
+.form-turno datalist, input {
     display: flex;
     margin: 10px;
 }
@@ -295,7 +311,7 @@ SolicitarTurno
 FOOTER
 -----------------------------
 */
-footer{
+footer {
     width: 100%;
     position: relative;
     background-color:#025255;
@@ -307,20 +323,22 @@ footer{
     justify-content: space-between;
 }
 
-.certificadoFooter{
-    display:flex;
+.certificadoFooter {
+    display: flex;
     flex-direction: column;
     color: #eef1ef;
     margin-left: 5%;
 }
-.contactoFooter{
+
+.contactoFooter {
     text-align: start;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: #eef1ef;
 }
-.redesFooter{
+
+.redesFooter {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -329,7 +347,8 @@ footer{
     margin-right: 5%;
 
 }
-.logoCertificadoFooter{
+
+.logoCertificadoFooter {
     background-image: url("../img/Ministerio_de_Salud.png");
     aspect-ratio: 3.5;
     width: 175px;
