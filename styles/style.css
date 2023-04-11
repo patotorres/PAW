@@ -204,17 +204,34 @@ NOTICIAS
     float: left;
     margin-left: 20px;
     margin-right: 10px;
+    
 }
-.noticias li{
+.noticias h2{
+    text-align: center;
+}
+.noticias ul{
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    display: inline-block;
+}
+.noticias a{
+    text-decoration: none;
+}
+.noticias h3{
     background-color: #eef1ef;
-    border: 1px solid #025255;
+    color: #025255;
     margin-bottom: 5px;
     padding: 10px;
 }
-.noticias a{
+.noticias img{
+    width: 100px;
+    height: 100px;
+}
+.noticias p{
     color: #025255;
-    font-size: 22px;
-    line-height: 1.4;
+    font-size: 18px;
+    vertical-align: text-top;
 }
 
 /*
