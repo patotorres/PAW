@@ -373,6 +373,38 @@ staff / directorio / especialidades / profesionales
 
 /*
 -----------------------------
+Valores
+-----------------------------
+*/
+.valores h3{
+    background-color: #eef1ef;
+    color: #025255;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.valores p{
+    color: #a04928;
+    vertical-align: text-top;
+    margin: 0.1 1em;
+    text-align: center;
+}
+
+.valores li{
+    list-style: none;
+}
+
+.valores img{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    margin: auto;
+    background-size: 100%;
+    margin-bottom: 5%;
+}
+
+/*
+-----------------------------
 SolicitarTurno
 -----------------------------
 */
