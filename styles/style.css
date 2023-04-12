@@ -308,6 +308,27 @@ Donde nos podés encontrar
     width: 100%;
     margin: auto;
 }
+/*
+-----------------------------
+ConsultarTurno
+-----------------------------
+*/
+
+.consultarturno label {
+    color: #025255;
+}
+.consultarturno p {
+    color: #a04928;
+    vertical-align: text-top;
+    margin: 0.1 1em;
+}
+
+.consultarturno img {
+    height: 96px;
+    height: 96px;
+    float: right;
+    
+}
 
 /*
 -----------------------------
