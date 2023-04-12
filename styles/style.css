@@ -317,6 +317,11 @@ ConsultarTurno
 .consultarturno label {
     color: #025255;
 }
+
+.consultarturno input[type="submit"]{
+    border-radius: 0%;
+}
+
 .consultarturno p {
     color: #a04928;
     vertical-align: text-top;
