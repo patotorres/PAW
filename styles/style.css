@@ -36,6 +36,10 @@ header {
     background-color: #eef1ef;
 }
 
+.lupa[type="submit"]{
+    background-color: #eef1ef;
+}
+
 header a {
     font-family: 'Gotham', sans-serif;
     text-decoration: none;
@@ -403,6 +407,20 @@ Valores
     margin-bottom: 5%;
 }
 
+/*
+-----------------------------
+Obra social
+-----------------------------
+*/
+.obrasocial ul{
+    display: flex;
+}
+.obrasocial a{
+    text-decoration: none;
+}
+.obrasocial li{
+    list-style: none;
+}
 /*
 -----------------------------
 SolicitarTurno
