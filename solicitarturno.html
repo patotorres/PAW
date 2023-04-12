@@ -58,8 +58,8 @@
         <label>Fecha de nacimiento:</label>
         <input type="date" tabindex="5"/>
         <label for="listaEspecialidades">Escoja una especialidad</label>
-        <input list="listaEspecialidades" />
-        <datalist id="listaEspecialidades" tabindex="6">
+        <input list="listaEspecialidades">
+        <datalist id="listaEspecialidades">
           <option value="" selected hidden disabled>Seleccione</option>
           <option value="Psiquiatria">Psiquiatría</option>
           <option value="Ortopedia">Ortopedía</option>
@@ -67,8 +67,8 @@
           <option value="Cardiologia">Cardiología</option>
         </datalist>
         <label for="listaProfesionales">Escoja un/a profesional</label>
-        <input list="listaProfesionales"/>
-        <datalist id="listaProfesionales" tabindex="7">
+        <input list="listaProfesionales">
+        <datalist id="listaProfesionales">
           <option value="" selected hidden disabled>Seleccione</option>
           <option value="AnaGarcia">Dra. Ana García</option>
           <option value="JorgeMartinez">Dr. Jorge Martínez</option>
@@ -79,9 +79,11 @@
         <input type="date" tabindex="8"/>
         <label>Hora del turno</label>
         <input type="time" tabindex="9"/>
-        <input type="submit" value="Confirmar" tabindex="10"/>
+        <div class="form-buttons">
+          <input type="reset" onclick="document.location.href='index.html'" name="Cancelar" value="Cancelar" tabindex="11">
+          <input type="submit" value="Confirmar" tabindex="10" >
+        </div>
       </form>
-      <input type="button" onclick="document.location.href='index.html'" name="Cancelar" value="Cancelar" tabindex="11">
     </main>
     <!--body-->
     <!--footer-->

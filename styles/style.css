@@ -159,6 +159,10 @@ main {
     margin: 10%;
     margin-top: 0;
 }
+main h2{
+    color: #009dda;
+    text-align: center;
+}
 
 /*
 -----------------------------
@@ -310,11 +314,41 @@ Donde nos podés encontrar
 SolicitarTurno
 -----------------------------
 */
+.form-turno {
+    display: grid;
+}
+
+.form-turno label {
+    color: #025255;
+}
+
 .form-turno datalist, input {
-    display: flex;
     margin: 10px;
 }
 
+.form-buttons {
+    text-align: right;
+}
+
+.form-buttons input[type="submit"], .form-buttons input[type="reset"] {
+    display: inline;
+    border-radius: 0;
+    border-style: solid;
+    border-color: #7b8c9e;
+    border-width: 1px;
+    color: #3b4a5a;
+}
+
+.form-buttons input[type="submit"] {
+    padding: 0.5em 30px;
+    background-color: rgba(91, 202, 91, 0.6);
+}
+
+.form-buttons input[type="reset"] {
+    padding: 0.5em 5px;
+    margin: 10px 10px 0 50px;
+    background-color: rgba(219, 50, 50, 0.7);
+}
 
 /*
 -----------------------------
