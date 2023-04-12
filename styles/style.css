@@ -196,7 +196,7 @@ FORMULARIO
     font-size: small;
 }
 
-.formulario input[type="submit"] {
+form input[type="submit"] {
     margin-top: 10px;  
     margin-bottom: 5px;   
     width: fit-content;
@@ -206,6 +206,7 @@ FORMULARIO
     background-color: #025255;
     color: white;
     border: 0;
+    cursor: pointer;
 }
 
 /*
@@ -372,6 +373,7 @@ SolicitarTurno
 
 .form-turno label {
     color: #025255;
+    margin-top: 10px;
 }
 
 .form-turno datalist, input {
@@ -382,6 +384,7 @@ SolicitarTurno
     text-align: right;
 }
 
+/*
 .form-buttons input[type="submit"], .form-buttons input[type="reset"] {
     display: inline;
     border-radius: 0;
@@ -401,6 +404,7 @@ SolicitarTurno
     margin: 10px 10px 0 50px;
     background-color: rgba(219, 50, 50, 0.7);
 }
+*/
 
 /*
 -----------------------------
