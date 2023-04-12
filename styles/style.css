@@ -113,8 +113,7 @@ BARRA DE NAVEGACION
     justify-content: space-evenly;
     list-style: none;
     padding: 0;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin: 0;
 }
 
 .navbar a {
@@ -123,9 +122,14 @@ BARRA DE NAVEGACION
     text-decoration: none;
 }
 
+.navbar ul li {
+    padding: 1em;
+}
+
 .navbarDropOption ul {
     display: none;
     background-color:#025255;
+    margin-top: 1em;
 }
 
 .navbarDropOption li {
@@ -133,7 +137,7 @@ BARRA DE NAVEGACION
     padding: 10px;
 }
 
-.navbarDropOption a:hover +ul, .navbarDropOption ul:hover {
+.navbarDropOption:hover > ul, .navbarDropOption ul:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -278,9 +282,10 @@ Donde nos podés encontrar
 -----------------------------
 */
 .elegirnos {
-    float:left;
-    width: 100%;
+    float: left;
+    margin-top: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .elegirnos h2 {
