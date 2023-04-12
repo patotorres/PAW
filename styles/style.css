@@ -337,27 +337,27 @@ ConsultarTurno
 
 /*
 -----------------------------
-staff / directorio
+staff / directorio / especialidades / profesionales
 -----------------------------
 */
-.staff ul {
+.grilla > ul {
     display: grid;
     list-style: none;
     grid-template-columns: auto auto auto;
     padding: 0 10%;
 }
 
-.staff > ul > li {
+.grilla > ul > li {
     display: table-cell;
     text-align: center;
     padding: 1em;
 }
 
-.staff > ul > li > p {
+.grilla > ul > li > p {
     margin: 0.75em 0;
 }
 
-.staff > ul > li > p:last-child {
+.grilla > ul > li > p:last-child {
     margin-bottom: 0;
 }
 
