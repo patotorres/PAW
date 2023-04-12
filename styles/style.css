@@ -206,7 +206,7 @@ NOTICIAS
 -----------------------------
 */
 .noticias {
-    float: inline-start;
+    float: left;
     width: 50%;
 }
 
@@ -259,9 +259,9 @@ Donde nos podés encontrar
 -----------------------------
 */
 .ubicacion {
-    float: inline-end;
+    float: right;
     text-align: center;
-    width: 50%;
+    width: auto;
 }
 
 .ubicacion h2 {
@@ -278,7 +278,9 @@ Donde nos podés encontrar
 -----------------------------
 */
 .elegirnos {
-    float:inline-end;
+    float:left;
+    width: 100%;
+    text-align: center;
 }
 
 .elegirnos h2 {
