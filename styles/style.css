@@ -332,6 +332,18 @@ ConsultarTurno
 
 /*
 -----------------------------
+staff / directorio
+-----------------------------
+*/
+.staff table{
+    table-layout: auto;
+    width: 100%;
+}
+.staff td {
+    padding-left: 15%;
+}
+/*
+-----------------------------
 SolicitarTurno
 -----------------------------
 */
