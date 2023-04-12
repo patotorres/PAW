@@ -207,6 +207,7 @@ NOTICIAS
 */
 .noticias {
     float: inline-start;
+    width: 50%;
 }
 
 .noticias h2 {
@@ -259,6 +260,8 @@ Donde nos podés encontrar
 */
 .ubicacion {
     float: inline-end;
+    text-align: center;
+    width: 50%;
 }
 
 .ubicacion h2 {
