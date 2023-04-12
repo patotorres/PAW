@@ -218,6 +218,15 @@ NOTICIAS
     float: left;
     width: 50%;
 }
+.noticias small{
+    float: initial;
+}
+.noticias li{
+    list-style: none;
+}
+.noticias .vermas{
+    float: right;
+}
 
 .noticias h2 {
     text-align: center;
