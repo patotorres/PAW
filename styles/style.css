@@ -340,13 +340,27 @@ ConsultarTurno
 staff / directorio
 -----------------------------
 */
-.staff table{
-    table-layout: auto;
-    width: 100%;
+.staff ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: auto auto auto;
+    padding: 0 10%;
 }
-.staff td {
-    padding-left: 15%;
+
+.staff > ul > li {
+    display: table-cell;
+    text-align: center;
+    padding: 1em;
 }
+
+.staff > ul > li > p {
+    margin: 0.75em 0;
+}
+
+.staff > ul > li > p:last-child {
+    margin-bottom: 0;
+}
+
 /*
 -----------------------------
 SolicitarTurno
