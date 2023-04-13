@@ -4,6 +4,7 @@ body {
     background-color: #eef1ef;
     font-family: 'Gotham'
 }
+
 /*
 paleta de colores: los colores primarios deben predominar en la web
 y mas aun el color verde, ese es nuestro color main
@@ -556,4 +557,27 @@ footer {
     width: 175px;
     background-size: 100%;
     background-repeat: no-repeat;    
+}
+
+.btn {
+    border-width: 1px;
+    padding: 2px 7px;
+    border-style: solid;
+    border-color: rgb(118, 118, 118);
+    display: inline-block;
+    box-sizing: border-box;
+    block-size: 21px;
+    cursor: pointer;
+    margin: 10px;
+    white-space: pre;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 13.333px;
+    font-family: 'Arial';
+}
+
+a.btn {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(239, 239, 239);
 }
