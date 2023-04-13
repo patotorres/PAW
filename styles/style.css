@@ -430,13 +430,17 @@ Obra social
 -----------------------------
 */
 .obrasocial ul{
-    display: flex;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0;
 }
 .obrasocial a{
     text-decoration: none;
 }
 .obrasocial li{
     list-style: none;
+    text-align: center;
 }
 /*
 -----------------------------
