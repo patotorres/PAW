@@ -160,9 +160,9 @@ BODY osea MAIN
 -----------------------------
 */
 main {
-    margin: 10%;
-    margin-top: 0;
+    margin: 0 10%;
 }
+
 main h2{
     color: #009dda;
     text-align: center;
@@ -222,13 +222,13 @@ NOTICIAS
     float: left;
     width: 50%;
 }
-.noticias small{
+.noticias small {
     float: initial;
 }
-.noticias li{
+.noticias li {
     list-style: none;
 }
-.noticias .vermas{
+.noticias .vermas {
     float: right;
 }
 
@@ -239,10 +239,14 @@ NOTICIAS
 
 .noticias ul {
     list-style: none;
-    max-height: 300px;
     overflow-y: auto;
     padding-left: initial;
     margin: 0;
+    height: 300px;
+}
+
+main.noticias ul {
+    height: auto;
 }
 
 .noticias a {
@@ -253,11 +257,19 @@ NOTICIAS
     min-height: 150px;
 }
 
-.noticias h3 {
+.noticias > ul > li h3 + small {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.noticias > ul > li h3 {
     background-color: #eef1ef;
     color: #025255;
-    margin: 0;
-    padding: 20px 0;
+    margin: 15px 0 0 0;
+}
+
+.noticias > ul > li:first-child h3 {
+    margin-top: 0;
 }
 
 .noticias img {
@@ -274,6 +286,11 @@ NOTICIAS
     margin: 0 1em;
 }
 
+main.noticias {
+    float: unset;
+    width: auto;
+
+}
 
 /*
 -----------------------------
@@ -475,6 +492,7 @@ footer {
     position: relative;
     background-color:#025255;
     margin: 0;
+    margin-top: 20px;
     padding: 0.01px; /*para que no haya espacios en blanco debajo del footer*/
     display: flex;
     text-align: center;
