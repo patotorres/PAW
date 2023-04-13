@@ -365,7 +365,28 @@ ConsultarTurno
     float: right;
     
 }
+/*
+-----------------------------
+Confirmar turno
+-----------------------------
+*/
 
+.confirmarturno p{
+    color: #a04928;
+    vertical-align: text-top;
+    margin: 0.1 1em;
+}
+
+.confirmarturno label{
+    color: #025255;
+}
+.confirmarturno input {
+    margin: 10px;
+}
+
+.confirmarturno button {
+    text-align: right;
+}
 /*
 -----------------------------
 staff / directorio / especialidades / profesionales
