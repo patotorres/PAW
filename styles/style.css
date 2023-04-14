@@ -634,7 +634,7 @@ footer {
 }
 
 .redesFooter p {
-    text-align: center;
+    margin-left: 26%;
 }
 .redesFooter {
     display: flex;
