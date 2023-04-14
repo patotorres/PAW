@@ -432,6 +432,13 @@ main.noticias {
 
 }
 
+@media (max-width:990px){
+    .noticias{
+        float: none;
+        width: 100%;
+    }
+}
+
 /*
 -----------------------------
 Donde nos podés encontrar
@@ -451,6 +458,25 @@ Donde nos podés encontrar
     align-self: center;
 }
 
+@media (max-width:450px){
+    .ubicacion{
+        float: none;
+    }
+    .ubicacion iframe{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width:990px)and (min-width:451px){
+    .ubicacion{
+        float: none;
+    }
+    .ubicacion iframe{
+        width: 100%;
+        margin: auto;
+    }
+}
 /*
 -----------------------------
 ¿Por qué elegirnos?
