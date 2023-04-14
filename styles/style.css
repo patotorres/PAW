@@ -177,7 +177,7 @@ BARRA DE NAVEGACION
     justify-content: space-between;
     padding: 0%;
     position: absolute;
-    background-color: #fcc444;
+    background-color: #d0244a;
 }
 
 .navbarDropOption ul:hover  ~  a  {
@@ -210,7 +210,7 @@ BARRA DE NAVEGACION
 
     .navbarDropOption:hover > ul, .navbarDropOption ul:hover {
         margin-left: 10ch;
-        background-color: #fcc444;
+        background-color: #d0244a;
         margin-top: -1.90em;
     }
     
@@ -237,7 +237,7 @@ BARRA DE NAVEGACION
 
     .navbarDropOption:hover > ul, .navbarDropOption ul:hover {
         margin-left: 10ch;
-        background-color: #fcc444;
+        background-color: #d0244a;
         margin-top: -1.95em;
     }
     
