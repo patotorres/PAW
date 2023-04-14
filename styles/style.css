@@ -129,11 +129,9 @@ BARRA DE NAVEGACION
 
 .navbar ul li {
     padding: 1em;
-    text-align: center;
+    padding-inline: initial;
 }
-nav ul li ul li{
-    width: auto;
-}
+
 .navbarDropOption ul {
     display: none;
     background-color:#025255;
@@ -142,7 +140,6 @@ nav ul li ul li{
 
 .navbarDropOption li {
     width: 8.4ch;
-    
     text-align: center;
 }
 
@@ -600,10 +597,11 @@ Media querys
 /*ajusto el nav*/
 @media (max-width:708px){
     .navbar {
+        display: flex;
         height: auto;
-        padding-top: 1px;
-        padding-left: 20%;
-        overflow: visible;
+        flex-direction: column;
+        padding-left: 10%;
+        margin: 0;
     }
     
     .navbar ul { 
