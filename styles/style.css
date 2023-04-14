@@ -511,10 +511,14 @@ staff / directorio / especialidades / profesionales
 Valores
 -----------------------------
 */
+
+.valores ul{
+    padding-left: 0;
+}
+
 .valores h3{
     background-color: #eef1ef;
     color: #025255;
-    padding: 20px 0;
     text-align: center;
 }
 
