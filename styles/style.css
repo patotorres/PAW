@@ -320,6 +320,7 @@ NOTICIAS
 }
 .noticias small {
     float: initial;
+    color: #a04928;
 }
 .noticias li {
     list-style: none;
@@ -386,6 +387,22 @@ main.noticias {
     float: unset;
     width: auto;
 
+}
+
+.noticias ul li:nth-child(even) article img{
+    float: right;
+}
+
+.noticias ul li:nth-child(even) article{
+    text-align: end;
+}
+
+.noticias ul li:nth-child(even) article .vermas{
+    float: left;
+}
+
+.noticias ul li:nth-child(even) article p{
+    color: #718839;
 }
 
 @media (max-width:990px){
