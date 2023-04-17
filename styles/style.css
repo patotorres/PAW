@@ -672,7 +672,7 @@ footer {
     display: flex;
     flex-direction: column;
     color: #fcc444;
-    margin-left: 5%;
+    margin-left: 0.5em;
 }
 
 .contactoFooter {
@@ -700,7 +700,7 @@ footer {
 }
 
 .redesFooter p {
-    margin-left: 26%;
+    margin-left: 2.5em;
     margin-bottom: 0.1em;
 
 }
