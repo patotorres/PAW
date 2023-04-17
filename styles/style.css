@@ -753,4 +753,7 @@ a.btn {
     footer li p{
         margin-left: 7%;
     }
+    footer address ul{
+        padding-left: 0em;
+    }
 }
