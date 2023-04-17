@@ -733,4 +733,7 @@ a.btn {
         flex-direction: column;
         align-items: center;
     }   
+    footer li p{
+        margin-left: 7%;
+    }
 }
