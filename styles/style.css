@@ -666,13 +666,12 @@ footer {
     display: flex;
     text-align: center;
     align-items: flex-start;
-    justify-content: space-between;
-}
+    justify-content: space-between;}
 
 .certificadoFooter {
     display: flex;
     flex-direction: column;
-    color: #eef1ef;
+    color: #fcc444;
     margin-left: 5%;
 }
 
@@ -681,18 +680,36 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: #eef1ef;
+    color: #fcc444;
+}
+
+.contactoFooter ul{
+    list-style:none;
+}
+.mail{
+    color: #fcc444;
+    text-decoration: none;
+}
+
+.contactoFooter p{
+    margin-bottom: 0.0em;
+}
+
+.contactoFooter ul li {
+    margin-bottom: 0.75em;
 }
 
 .redesFooter p {
     margin-left: 26%;
+    margin-bottom: 0.1em;
+
 }
 .redesFooter {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: #eef1ef;
+    color: #fcc444;
     margin-right: 5%;
 
 }
