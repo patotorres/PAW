@@ -204,6 +204,12 @@ BARRA DE NAVEGACION
 
 #hamburgerMenu {
     display: none;
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    margin: 0;
+    opacity: 0;
 }
 
 label[for=hamburgerMenu] {
@@ -272,6 +278,10 @@ label[for=hamburgerMenu]:after {
         align-items: flex-start;
     }
 
+    #hamburgerMenu {
+        display: inline-block;
+    }
+    
     label[for=hamburgerMenu] {
         display: inline-block;
     }
