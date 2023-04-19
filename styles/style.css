@@ -189,6 +189,8 @@ nav ul li {
 
 .navbarDropOption li {
     text-align: center;
+    width: 100%;
+    background-color: #5b2b19
 }
 
 .navbarDropOption:hover > ul, .navbarDropOption ul:hover {
@@ -196,8 +198,12 @@ nav ul li {
 }
 
 nav li:hover {
-    background-color: #025255;
+    background-color: #a04928;
     cursor: pointer;
+}
+
+.navbarDropOption > ul > li:hover {
+    background-color: #a04928;
 }
 
 #hamburgerMenu {
@@ -263,7 +269,7 @@ label[for=hamburgerMenu]:after {
 
     .navbarDropOption > ul {
         margin-left: 11ch;
-        margin-top: -2em;
+        margin-top: -1.94em;
         background-color: #5b2b19
     }
 
