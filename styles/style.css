@@ -142,7 +142,7 @@ BARRA DE NAVEGACION
 
 
 nav {
-    background-color:#025255;
+    background-color: #025255;
     margin: 0%;
     width: 100%;
     padding-top: 1px;
@@ -161,10 +161,15 @@ nav ul {
     margin: 0;
 }
 
+nav > ul {
+    position: relative;
+}
+
 nav a {
     color: white;
     font-family: 'Gotham', sans-serif;
     text-decoration: none;
+    padding: 0 1em;
 }
 
 nav ul li {
@@ -174,32 +179,25 @@ nav ul li {
 
 .navbarDropOption ul {
     display: none;
-    background-color:#025255;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #025255;
     margin-top: 1em;
+    padding: 0%;
+    position: absolute;
 }
 
 .navbarDropOption li {
-    width: 8.4ch;
     text-align: center;
 }
 
 .navbarDropOption:hover > ul, .navbarDropOption ul:hover {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0%;
-    position: absolute;
-    background-color: #d0244a;
+    display: flex;    
 }
 
-.navbarDropOption ul:hover  ~  a  {
-    visibility: hidden;
-    color: aliceblue;
-    background-color: #fcc444;
-}
-
-nav li:hover{
-    background-color: #fcc444;
+nav li:hover {
+    background-color: #025255;
+    cursor: pointer;
 }
 
 #hamburgerMenu {
@@ -215,7 +213,7 @@ nav li:hover{
 label[for=hamburgerMenu] {
     display: none;
     border-radius: 3px;
-    background: black;
+    background: #009dda;
     position: relative;
     height: 5px;
     width: 30px;
@@ -225,7 +223,7 @@ label[for=hamburgerMenu] {
 
 label[for=hamburgerMenu]:before {
     border-radius: 3px;
-    background: #000;
+    background: #d0244a;
     content: '';
     position: absolute;
     top: -10px;
@@ -236,22 +234,13 @@ label[for=hamburgerMenu]:before {
 
 label[for=hamburgerMenu]:after {
     border-radius: 3px;
-    background: #000;
+    background: #fcc444;
     content: '';
     position: absolute;
     left: 0;
     top: 10px;
     width: 30px;
     height: 5px;
-}
-
-/*ajusto el nav*/
-@media (max-width:500px){
-
-    .navbarDropOption:hover > ul, .navbarDropOption ul:hover {
-        margin-top: -1.95em;
-    }
-    
 }
 
 @media (max-width:708px) {
@@ -264,13 +253,22 @@ label[for=hamburgerMenu]:after {
         margin: 0;
     }
     
-    li.navbarDropOption{
-       width: 10ch;
+    li.navbarDropOption {
+       width: 11ch;
     }
 
-    .navbarDropOption:hover > ul, .navbarDropOption ul:hover {
-        margin-left: 10ch;
-        margin-top: -1.95em;
+    nav li:hover {
+        background-color: #a04928;
+    }
+
+    .navbarDropOption > ul {
+        margin-left: 11ch;
+        margin-top: -2em;
+        background-color: #5b2b19
+    }
+
+    .navbarDropOption > ul > li:hover {
+        background-color: #a04928;
     }
 
     nav ul { 
@@ -281,7 +279,7 @@ label[for=hamburgerMenu]:after {
     #hamburgerMenu {
         display: inline-block;
     }
-    
+
     label[for=hamburgerMenu] {
         display: inline-block;
     }
