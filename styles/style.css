@@ -788,3 +788,36 @@ a.btn {
         padding-left: 0em;
     }
 }
+
+/*
+-----------------------------
+Vista de impresion
+-----------------------------
+*/
+
+@media print{
+    header{
+        display: none !important;
+    }
+    nav{
+        display: none !important;
+    }
+    footer{
+        display: none !important;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    main{
+        float: none
+    }
+
+    h1:after { 
+        content: url(https://chart.googleapis.com/chart?cht=qr&chs=150×150&chl=http://&choe=UTF-8); 
+        position: absolute; 
+        right: 0; 
+        top: 0;
+    }
+}
