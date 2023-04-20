@@ -1,3 +1,7 @@
+* {
+    line-height: 1em;
+}
+
 body {
     width: 100%;
     margin: 0%;
@@ -145,7 +149,6 @@ nav {
     background-color: #025255;
     margin: 0%;
     width: 100%;
-    padding-top: 1px;
     overflow: visible;
     box-shadow: 0px 8px 9px -8px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 8px 9px -8px rgba(0,0,0,0.75);
