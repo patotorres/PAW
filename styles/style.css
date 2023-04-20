@@ -10,7 +10,7 @@ paleta de colores: los colores primarios deben predominar en la web
 y mas aun el color verde, ese es nuestro color main
 primarios
 =================
-verde -> #025255 
+verde -> #025255
 Amarillo -> #fcc444
 Rojo -> #d0244a
 Azul -> #009dda
@@ -93,7 +93,7 @@ header h1 {
 }
 
 @media (max-width:449px){
-    header h1{
+    header h1 {
         display: flex;
         padding-right: 20%;
         padding-bottom: 15%;
@@ -108,7 +108,7 @@ header h1 {
 }
 
 @media (max-width:500px)and (min-width:450px){
-    header h1{
+    header h1 {
         display: flex;
         padding-right: 20%;
         padding-bottom: 15%;
@@ -116,19 +116,19 @@ header h1 {
         padding-left: 20%;
         flex-direction: column;
     }
-    .Buscador{
+    .Buscador {
         padding-right: 5%;
     }
 }
 @media (max-width:565px) and (min-width:501px){
-    header h1{
+    header h1 {
         display: flex;
         padding: 15%;
         padding-top: 0%;
         padding-left: 5%;
         flex-direction: column;
     }
-    .Buscador{
+    .Buscador {
         padding-right: 10%;
     }
 }
@@ -152,7 +152,7 @@ nav {
     -moz-box-shadow: 0px 8px 9px -8px rgba(0,0,0,0.75);
 }
 
-nav ul { 
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -169,7 +169,7 @@ nav a {
     color: white;
     font-family: 'Gotham', sans-serif;
     text-decoration: none;
-    padding: 0 1em;
+    padding: 1em;
 }
 
 nav ul li {
@@ -194,12 +194,11 @@ nav ul li {
 }
 
 .navbarDropOption:hover > ul, .navbarDropOption ul:hover {
-    display: flex;    
+    display: flex;
 }
 
 nav li:hover {
     background-color: #a04928;
-    cursor: pointer;
 }
 
 .navbarDropOption > ul > li:hover {
@@ -258,7 +257,7 @@ label[for=hamburgerMenu]:after {
         padding-left: 10%;
         margin: 0;
     }
-    
+
     li.navbarDropOption {
        width: 11ch;
     }
@@ -269,7 +268,7 @@ label[for=hamburgerMenu]:after {
 
     .navbarDropOption > ul {
         margin-left: 11ch;
-        margin-top: -1.94em;
+        margin-top: -2em;
         background-color: #5b2b19
     }
 
@@ -277,7 +276,7 @@ label[for=hamburgerMenu]:after {
         background-color: #a04928;
     }
 
-    nav ul { 
+    nav ul {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -304,7 +303,7 @@ main {
     margin: 0 10%;
 }
 
-main h2{
+main h2 {
     color: #009dda;
     text-align: center;
 }
@@ -342,8 +341,8 @@ FORMULARIO
 }
 
 form input[type="submit"] {
-    margin-top: 10px;  
-    margin-bottom: 5px;   
+    margin-top: 10px;
+    margin-bottom: 5px;
     width: fit-content;
     padding: 10px;
     align-self: end;
@@ -369,10 +368,11 @@ NOTICIAS
 }
 .noticias li {
     list-style: none;
-    padding-bottom: 10%;
+    padding-bottom: 3em;
 }
 .noticias .vermas {
     float: right;
+    margin: 1em 0;
 }
 
 .noticias h2 {
@@ -419,7 +419,7 @@ main.noticias ul {
     width: 100px;
     height: 100px;
     float: left;
-    margin: 0 0.75em 0.75em 2em
+    margin: 0 0.75em 0.75em 2em;
 }
 
 .noticias p {
@@ -435,24 +435,29 @@ main.noticias {
 
 }
 
-.noticias ul li:nth-child(even) article img{
+.noticias ul li:nth-child(even) article img {
     float: right;
+    margin: 0 2em 0.75em 0.75em;
 }
 
-.noticias ul li:nth-child(even) article{
+.noticias ul li:nth-child(even) article h3 {
     text-align: end;
 }
 
-.noticias ul li:nth-child(even) article .vermas{
+.noticias ul li:nth-child(even) article h3 + small {
+    text-align: end;
+}
+
+.noticias ul li:nth-child(even) article .vermas {
     float: left;
 }
 
-.noticias ul li:nth-child(even) article p{
+.noticias ul li:nth-child(even) article p {
     color: #718839;
 }
 
-@media (max-width:990px){
-    .noticias{
+@media (max-width:990px) {
+    .noticias {
         float: none;
         width: 100%;
     }
@@ -478,20 +483,20 @@ Donde nos podés encontrar
 }
 
 @media (max-width:450px){
-    .ubicacion{
+    .ubicacion {
         float: none;
     }
-    .ubicacion iframe{
+    .ubicacion iframe {
         width: 90%;
         margin: auto;
     }
 }
 
 @media (max-width:990px)and (min-width:451px){
-    .ubicacion{
+    .ubicacion {
         float: none;
     }
-    .ubicacion iframe{
+    .ubicacion iframe {
         width: 100%;
         margin: auto;
     }
@@ -548,7 +553,7 @@ ConsultarTurno
     height: 96px;
     height: 96px;
     float: right;
-    
+
 }
 /*
 -----------------------------
@@ -556,13 +561,13 @@ Confirmar turno
 -----------------------------
 */
 
-.confirmarturno p{
+.confirmarturno p {
     color: #a04928;
     vertical-align: text-top;
     margin: 0.1 1em;
 }
 
-.confirmarturno label{
+.confirmarturno label {
     color: #025255;
 }
 .confirmarturno input {
@@ -604,28 +609,28 @@ Valores
 -----------------------------
 */
 
-.valores ul{
+.valores ul {
     padding-left: 0;
 }
 
-.valores h3{
+.valores h3 {
     background-color: #eef1ef;
     color: #025255;
     text-align: center;
 }
 
-.valores p{
+.valores p {
     color: #a04928;
     vertical-align: text-top;
     margin: 0.1 1em;
     text-align: center;
 }
 
-.valores li{
+.valores li {
     list-style: none;
 }
 
-.valores img{
+.valores img {
     width: 180px;
     height: 180px;
     display: flex;
@@ -639,16 +644,16 @@ Valores
 Obra social
 -----------------------------
 */
-.obrasocial ul{
+.obrasocial ul {
     margin: auto;
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 0;
 }
-.obrasocial a{
+.obrasocial a {
     text-decoration: none;
 }
-.obrasocial li{
+.obrasocial li {
     list-style: none;
     text-align: center;
 }
@@ -728,15 +733,15 @@ footer {
     color: #fcc444;
 }
 
-.contactoFooter ul{
+.contactoFooter ul {
     list-style:none;
 }
-.mail{
+.mail {
     color: #fcc444;
     text-decoration: none;
 }
 
-.contactoFooter p{
+.contactoFooter p {
     margin-bottom: 0.0em;
 }
 
@@ -764,7 +769,7 @@ footer {
     aspect-ratio: 3.5;
     width: 175px;
     background-size: 100%;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
 }
 
 .btn {
@@ -791,14 +796,16 @@ a.btn {
 }
 
 @media (max-width:511px){
-    footer{
+    footer {
         flex-direction: column;
         align-items: center;
-    }   
-    footer .redesFooter{
+    }
+
+    footer .redesFooter {
         margin-right: 2.5em;
     }
-    footer address ul{
+
+    footer address ul {
         padding-left: 0em;
     }
 }
@@ -809,14 +816,14 @@ Vista de impresion
 -----------------------------
 */
 
-@media print{
-    header{
+@media print  {
+    header  {
         display: none;
     }
-    nav{
+    nav {
         display: none;
     }
-    footer{
+    footer {
         display: none;
     }
 
@@ -824,7 +831,7 @@ Vista de impresion
         content: " (" attr(href) ")";
     }
 
-    main{
+    main {
         float: none
     }
 }
