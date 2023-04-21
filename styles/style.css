@@ -115,11 +115,11 @@ header h1 {
         padding-right: 20%;
         padding-bottom: 15%;
         padding-top: 0%;
-        padding-left: 17%;
+        padding-left: 18%;
         flex-direction: column;
     }
     .Buscador{
-        padding-right: 5%;
+        padding-right: 10%;
     }
     .lupa[type="submit"]{
         padding-right: 1%;
