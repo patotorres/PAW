@@ -134,7 +134,7 @@ header h1 {
         flex-direction: column;
     }
     .Buscador {
-        padding-right: 5%;
+        padding-right: 13%;
     }
 }
 @media (max-width:565px) and (min-width:501px){
