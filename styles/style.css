@@ -468,6 +468,7 @@ main.noticias ul {
 .noticias p {
     color: #025255;
     font-size: 18px;
+    line-height: 1.5em;
     vertical-align: text-top;
     margin: 0 1em;
 }
@@ -667,7 +668,7 @@ Valores
     color: #3b4a5a;
     vertical-align: text-top;
     margin: 0.1 1em;
-    line-height: 1.3em;
+    line-height: 1.5em;
     padding-left: 2em;
     text-align: left;
 }
