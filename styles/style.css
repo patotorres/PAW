@@ -96,6 +96,17 @@ header h1 {
     background-color: #ffe3a1;
 }
 
+.Buscador  input[type="submit"]{
+    animation: 2s scaleX;
+    transition: all 2s;
+}
+
+@keyframes scaleX {
+    from {opacity: 0;
+        transform: translateX(-400px);
+        };
+}
+
 @media (max-width:449px){
     header h1 {
         display: flex;
@@ -176,6 +187,7 @@ nav a {
 }
 
 nav ul li {
+    transition:all 1s;
     padding: 1em;
     padding-inline: initial;
 }
@@ -196,7 +208,7 @@ nav ul li {
     text-align: center;
     width: 100%;
     background-color: #5b2b19;
-    transition: all 1s;
+    transition: all 0.25s;
 }
 
 .navbarDropOption:hover > ul, .navbarDropOption ul:hover {
@@ -204,6 +216,7 @@ nav ul li {
 }
 
 nav li:hover {
+    transform: scale(1.1);
     background-color: #a04928;
 }
 
@@ -338,6 +351,7 @@ FORMULARIO
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 .formulario h2 {
@@ -365,10 +379,14 @@ form input[type="submit"] {
     transition: all 1s;
     border-radius: 0px 20px 20px 20px;
 }
- 
+
+
+
+
 form input[type="submit"]:hover{
     transform: translateY(-7px);
 }
+
 
 
 
