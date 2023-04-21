@@ -897,8 +897,11 @@ Modo oscuro
     header{
         background-color: #151E21;
     }
+    header a {
+        background-image: url("../img/Imagotipo_PAW_Hospitals_dark.svg");
+    }
     nav{
-        background-color: #5b2b19;
+        background-color: #3b4a5a;
     }
     .formulario input{
         background-color: #eef1ef;
