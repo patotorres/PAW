@@ -920,12 +920,26 @@ Modo oscuro
         opacity: 1;
     }
 
+    .noticias ul li a article h3{
+        color:#fcc444
+    }
+
+    .noticias ul li article h3{
+        color:#fcc444
+    }
     .noticias p{
         color: #eef1ef;
     }
 
+    .vermas{
+        color: #009dda;
+    }
     .elegirnos p{
         color: #eef1ef;
+    }
+
+    .consultarturno label{
+        color: #fcc444;
     }
     .consultarturno p{
         color: #eef1ef;
@@ -936,6 +950,7 @@ Modo oscuro
     }
 
     .valores h3{
+        color:#fcc444;
         background-color: transparent;
     }
 
