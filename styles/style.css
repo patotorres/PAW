@@ -884,3 +884,74 @@ Vista de impresion
         float: none
     }
 }
+/*
+-----------------------------
+Modo oscuro
+-----------------------------
+*/
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151E21;
+    }
+    header{
+        background-color: #151E21;
+    }
+    nav{
+        background-color: #5b2b19;
+    }
+    .formulario input{
+        background-color: #eef1ef;
+    }
+    label{
+        color: #eef1ef;
+    }
+    .noticias ul li article h3{
+        background-color: transparent;
+    }
+    .ubicacion iframe {
+        filter: invert(100%);
+    }
+    .Buscador .search-box::placeholder{
+        color:#eef1ef;
+        opacity: 1;
+    }
+
+    .noticias p{
+        color: #eef1ef;
+    }
+
+    .elegirnos p{
+        color: #eef1ef;
+    }
+    .consultarturno p{
+        color: #eef1ef;
+    }
+    
+    .grilla ul{
+        filter: invert(100%);
+    }
+
+    .valores h3{
+        background-color: transparent;
+    }
+
+    .valores p{
+        color: #eef1ef;
+    }
+
+    .valores img{
+        filter: invert(100%);
+    }
+
+
+    .noticias ul li:nth-child(even) article p {
+        color: #718839;
+    }
+
+    .obrasocial ul a{
+        color:#eef1ef;
+        text-decoration: none;
+    }
+
+ }
