@@ -870,8 +870,8 @@ Vista de impresion
 */
 
 @media print  {
-    header  {
-        display: none;
+    header h1 .Buscador{
+        display:none;
     }
     nav {
         display: none;
@@ -879,11 +879,6 @@ Vista de impresion
     footer {
         display: none;
     }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
     main {
         float: none
     }
