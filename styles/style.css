@@ -661,10 +661,12 @@ Valores
 }
 
 .valores p {
-    color: #a04928;
+    color: #3b4a5a;
     vertical-align: text-top;
     margin: 0.1 1em;
-    text-align: center;
+    line-height: 1.3em;
+    padding-left: 2em;
+    text-align: left;
 }
 
 .valores li {
