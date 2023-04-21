@@ -331,7 +331,7 @@ main {
 }
 
 main h2 {
-    color: #009dda;
+    color: #718839;
     text-align: center;
 }
 
@@ -358,7 +358,7 @@ FORMULARIO
 }
 
 .formulario h2 {
-    color: #009dda;
+    color: #718839;
     align-content: end;
 }
 
@@ -417,7 +417,7 @@ NOTICIAS
 
 .noticias h2 {
     text-align: center;
-    color: #009dda;
+    color: #718839;
 }
 
 .noticias ul {
@@ -493,7 +493,7 @@ main.noticias {
 }
 
 .noticias ul li:nth-child(even) article p {
-    color: #718839;
+    color: #3b4a5a;
 }
 
 @media (max-width:990px) {
@@ -516,7 +516,7 @@ Donde nos podés encontrar
 
 .ubicacion h2 {
     text-align: center;
-    color: #009dda;
+    color: #718839;
 }
 .ubicacion iframe {
     align-self: center;
@@ -555,7 +555,7 @@ Donde nos podés encontrar
 
 .elegirnos h2 {
     text-align: center;
-    color: #009dda;
+    color: #718839;
 }
 
 .elegirnos p {
@@ -585,7 +585,7 @@ ConsultarTurno
 }
 
 .consultarturno p {
-    color: #a04928;
+    color: #3b4a5a;
     vertical-align: text-top;
     margin: 0.1 1em;
 }
