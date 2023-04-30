@@ -1,0 +1,31 @@
+{
+    "name": "paw/tp3" ,
+    "description": "Proyecto del grupo 3 para- los TPs de PAW 2023",
+    "keywords": ["php","mvc"],
+    "License": "MIT",
+    "authors":[
+        {
+        "name":"Federico Simone",
+        "email":"fedesimone31@gmail.com",
+        "role":"Co-Creator / Main Developer"
+        },
+        {
+        "name":"Salvador Scafati",
+        "email":"salvadorscafati@gmail.com",
+        "role":"Co-Creator / Main Developer"
+        },
+        {
+        "name":"Patricio Torres",
+        "email":"petorres92@gmail.com",
+        "role":"Co-Creator / Main Developer"
+        }
+    ],
+    "require":{
+        "php":">=8"
+    },
+    "autoload":{
+        "psr-4": {
+            "Paw\\":"src/"
+        }
+    }
+}
