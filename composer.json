@@ -21,7 +21,8 @@
         }
     ],
     "require":{
-        "php":">=8"
+        "php":">=8",
+        "filp/whoops":"~2"
     },
     "autoload":{
         "psr-4": {
