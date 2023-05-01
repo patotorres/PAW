@@ -2,11 +2,9 @@
 <html lang="es">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UNLu PAW UL Hospitals</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <?php
+      require 'parts/head.view.php';
+    ?>
   </head>
 
   <body>
@@ -25,62 +23,62 @@
 
       <ul>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>
         <li>
-          <img src="img/personaej.png" width="48" height="48" />
+          <img src="/assets/img/personaej.png" width="48" height="48" />
           <p>Nombre</p>
           <p>Rango</p>
         </li>

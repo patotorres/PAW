@@ -2,11 +2,9 @@
 <html lang="es">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UNLu PAW UL Hospitals</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <?php
+      require 'parts/head.view.php';
+    ?>
   </head>
 
   <body>
@@ -28,7 +26,7 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis veritatis repellendus sint numquam vitae dolores
             pariatur voluptatem iste consequatur incidunt ea ad, voluptas quo quibusdam impedit quam quasi corporis doloremque!
           </p>
-          <img src="img/mision.png" width="180" height="180" />
+          <img src="/assets/img/mision.png" width="180" height="180" />
         </li>
 
         <li>
@@ -36,7 +34,7 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis veritatis repellendus sint numquam vitae dolores
             pariatur voluptatem iste consequatur incidunt ea ad, voluptas quo quibusdam impedit quam quasi corporis doloremque!
           </p>
-          <img src="img/vision.png" width="180" height="180" />
+          <img src="/assets/img/vision.png" width="180" height="180" />
         </li>
 
         <li>
@@ -44,7 +42,7 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis veritatis repellendus sint numquam vitae dolores
             pariatur voluptatem iste consequatur incidunt ea ad, voluptas quo quibusdam impedit quam quasi corporis doloremque!
           </p>
-          <img src="img/valores.png" width="180" height="180" />
+          <img src="/assets/img/valores.png" width="180" height="180" />
         </li>
       </ul>
     </main>

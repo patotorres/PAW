@@ -2,11 +2,9 @@
 <html lang="es">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UNLu PAW UL Hospitals</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <?php
+      require 'parts/head.view.php';
+    ?>
   </head>
 
   <body>
@@ -26,49 +24,49 @@
         <li>
           <a href="https://osde.com.ar" target="_blank">
             <p>obra social ejemplo</p>
-            <img src="img/obrasocialej.png" width="89" height="89" />
+            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
           </a>
         </li>
         <li>
           <a href="https://osde.com.ar" target="_blank">
             <p>obra social ejemplo</p>
-            <img src="img/obrasocialej.png" width="89" height="89" />
+            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
           </a>
         </li>
         <li>
           <a href="https://osde.com.ar" target="_blank">
             <p>obra social ejemplo</p>
-            <img src="img/obrasocialej.png" width="89" height="89" />
+            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
           </a>
         </li>
         <li>
           <a href="https://osde.com.ar" target="_blank">
             <p>obra social ejemplo</p>
-            <img src="img/obrasocialej.png" width="89" height="89" />
+            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
           </a>
         </li>
         <li>
           <a href="https://osde.com.ar" target="_blank">
             <p>obra social ejemplo</p>
-            <img src="img/obrasocialej.png" width="89" height="89" />
+            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
           </a>
         </li>
         <li>
           <a href="https://osde.com.ar" target="_blank">
             <p>obra social ejemplo</p>
-            <img src="img/obrasocialej.png" width="89" height="89" />
+            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
           </a>
         </li>
         <li>
           <a href="https://osde.com.ar" target="_blank">
             <p>obra social ejemplo</p>
-            <img src="img/obrasocialej.png" width="89" height="89" />
+            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
           </a>
         </li>
         <li>
           <a href="https://osde.com.ar" target="_blank">
             <p>obra social ejemplo</p>
-            <img src="img/obrasocialej.png" width="89" height="89" />
+            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
           </a>
         </li>
       </ul>

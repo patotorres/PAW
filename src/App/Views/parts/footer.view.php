@@ -16,9 +16,9 @@
     <li class="redesFooter">
     <p>Redes</p>
     <ul>
-        <a href="https://instagram.com"target=_blank><img src="img/instagram.png" width="48" height="48" /></a>
-        <a href="https://twitter.com"target=_blank><img src="img/twitter.png" width="48" height="48" /></a>
-        <a href="https://facebook.com"target=_blank><img src="img/facebook.png" width="48" height="48" /></a>
+        <a href="https://instagram.com"target=_blank><img src="/assets/img/instagram.png" width="48" height="48" /></a>
+        <a href="https://twitter.com"target=_blank><img src="/assets/img/twitter.png" width="48" height="48" /></a>
+        <a href="https://facebook.com"target=_blank><img src="/assets/img/facebook.png" width="48" height="48" /></a>
     </ul>
     </li>
 </footer>

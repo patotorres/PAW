@@ -2,11 +2,9 @@
 <html lang="es">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UNLu PAW UL Hospitals</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <?php
+      require 'parts/head.view.php';
+    ?>
   </head>
 
   <body>
@@ -70,11 +68,11 @@
         <ul>
           <li>
             <!--necesito poner dentro de la seccion articulos, 2 por ejemplo-->
-            <a href="noticias.html" target="_blank">
+            <a href="noticias" target="_blank">
               <article>
                 <h3>Noticia ejemplo</h3>
                 <small>12/4/23</small>
-                <img src="img/noticiaej.png"/>
+                <img src="/assets/img/noticiaej.png"/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet tellus cras adipiscing enim eu. Purus semper eget duis at tellus at. Pellentesque habitant morbi tristique senectus et netus et malesuada. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Consequat id porta nibh venenatis cras. Gravida quis blandit turpis cursus. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Ac ut consequat semper viverra. Dolor sit amet consectetur adipiscing elit pellentesque habitant.
 
 Amet purus gravida quis blandit turpis cursus in hac habitasse. Aliquet risus feugiat in ante metus dictum at tempor commodo. Amet commodo nulla facilisi nullam. A scelerisque purus semper eget duis at tellus at urna. Ornare lectus sit amet est. Auctor elit sed vulputate mi sit amet. Dolor purus non enim praesent elementum facilisis. Sit amet venenatis urna cursus eget nunc scelerisque viverra mauris. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Ullamcorper malesuada proin libero nunc. Massa placerat duis ultricies lacus sed turpis tincidunt id. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Sed cras ornare arcu dui. Aenean euismod elementum nisi quis eleifend quam adipiscing. Ut venenatis tellus in metus vulputate. Eu nisl nunc mi ipsum faucibus vitae aliquet. Tristique nulla aliquet enim tortor at auctor urna nunc.</p>
@@ -82,11 +80,11 @@ Amet purus gravida quis blandit turpis cursus in hac habitasse. Aliquet risus fe
             </a>
           </li>
           <li>
-            <a href="noticias.html" target="_blank">
+            <a href="noticias" target="_blank">
               <article>
                 <h3>Noticia ejemplo</h3>
                 <small>31/3/23</small>
-                <img src="img/noticiaej.png"/>
+                <img src="/assets/img/noticiaej.png"/>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
               </article>
             </a>

@@ -2,11 +2,9 @@
 <html lang="es">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UNLu PAW UL Hospitals</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <?php
+      require 'parts/head.view.php';
+    ?>
   </head>
 
   <body>
@@ -32,7 +30,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iure sint exercitationem consequatur, beatae modi harum ipsum totam, perspiciatis recusandae voluptatem similique fugiat, corrupti facilis voluptatibus facere unde numquam mollitia?</p>
       <label>Datos del profesional:</label>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, inventore? Sit vero autem, laborum repellat eius molestiae ratione impedit in accusamus fuga porro tempora, iure earum alias quae hic vel.consectetur adipisicing elit. Quo, inventore? Sit vero autem, laborum repellat eius molestiae ratione impedit in accusamus fuga porro tempora, iure earum alias quae hic vel.</p>
-      <img src="img/personaej.png"/>
+      <img src="/assets/img/personaej.png"/>
     </main>
     <!--body-->
     <!--footer-->

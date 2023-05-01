@@ -2,81 +2,31 @@
 <html lang="es">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UNLu PAW UL Hospitals</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <?php
+      require 'parts/head.view.php';
+    ?>
   </head>
 
   <body>
     <!--header-->
-    <header>
-      <h1>
-        <a href="index.html"><img src="img/logo.png" width="96px" height="96px" />
-          Centro Médico PAW
-        </a>
-        <form>
-          <input type="search" placeholder="Buscar ..." />
-          <input class="lupa" type="submit" value="&#128269;" class="search-box"/>
-        </form>
-      </h1>
-    </header>
+    <?php
+      require 'parts/header.view.php';
+    ?>
     <!--header-->
     <!--navbar-->
-    <nav>
-      <ul>
-        <li>
-          <a>Turnos</a>
-          <ul>
-            <li><a href="consultarturno.html">Consultar Turno</a></li>
-            <li><a href="solicitarturno.html">Solicitar Turnos</a></li>
-          </ul>
-        </li>
-        <li>
-          <a>Institucional</a>
-          <ul>
-            <li><a href="staff.html">Staff</a></li>
-            <li><a href="valores.html">Valores</a></li>
-          </ul>
-        </li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="obra-social.html">Obra Social</a></li>
-        <li><a href="especialidades-profesionales.html">Especialidades y profesionales</a></li>
-      </ul>
-    </nav>
+    <?php
+      require 'parts/nav.view.php';
+    ?>
     <!--navbar-->
     <!--body-->
     <main>
       
     </main>
+    <!--body-->
+   <!--footer-->
+   <?php
+      require 'parts/footer.view.php';
+    ?>
+    <!--footer-->
   </body>
-  <!--body-->
-  <!--footer-->
-  <footer>
-    <li class="certificadoFooter">
-      <p>Avalado por</p>
-      <a class="logoCertificadoFooter" href="https://www.argentina.gob.ar/salud"target=_blank></a>    
-    </li>
-    <li class="contactoFooter">
-      <p>Contacto</p>
-      <address>
-        <ul>
-          <li><a class="mail" href="mailto:juanperez@email.com">Correo electrónico: juanperez@email.com</a></li>
-          <li>Teléfono: +1 (555) 555-5555</li>
-          <li>Dirección: 123 Calle Principal, Luján, 6700</li>
-        </ul>  
-      </address>
-    </li>
-    <li class="redesFooter">
-      <p>Redes</p>
-      <ul>
-        <a href="https://instagram.com"target=_blank><img src="img/instagram.png" width="48" height="48" /></a>
-        <a href="https://twitter.com"target=_blank><img src="img/twitter.png" width="48" height="48" /></a>
-        <a href="https://facebook.com"target=_blank><img src="img/facebook.png" width="48" height="48" /></a>
-      </ul>
-    </li>
-  </footer>
-  <!--footer-->
-
 </html>

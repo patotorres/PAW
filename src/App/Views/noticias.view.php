@@ -2,11 +2,9 @@
 <html lang="es">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UNLu PAW UL Hospitals</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <?php
+      require 'parts/head.view.php';
+    ?>
   </head>
 
   <body>
@@ -27,7 +25,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
@@ -36,7 +34,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
@@ -45,7 +43,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
@@ -54,7 +52,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
@@ -63,7 +61,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
@@ -72,7 +70,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
@@ -81,7 +79,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
@@ -90,7 +88,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
@@ -99,7 +97,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
@@ -108,7 +106,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
@@ -117,7 +115,7 @@
           <article>
             <h3>Noticia ejemplo</h3>
             <small>12/4/23</small>
-            <img src="img/noticiaej.png" width="89" height="89" />
+            <img src="/assets/img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
             <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
