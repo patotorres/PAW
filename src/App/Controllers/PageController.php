@@ -102,4 +102,18 @@ class PageController
         require $this->viewsDir . 'especialidades-profesionales.view.php';
     }
 
+    public function solicitarturnoProcess()
+    {
+        $formulario = $_POST;
+        //hay que hacer algo con estos datos
+        $this->solicitarturno();
+    }
+
+    public function confirmardatosProcess()
+    {
+        $formulario = $_POST;
+        //hay que hacer algo con estos datos
+        $this->confirmardatos();
+    }
+
 }

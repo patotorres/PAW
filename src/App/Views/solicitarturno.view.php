@@ -22,7 +22,7 @@
     <!--navbar-->
     <!--body-->
     <main class="formulario"><h2>Solicitar Turno</h2>
-      <form action="confirmardatos" tabindex="0">
+      <form action="confirmardatos" method="POST" tabindex="0">
         <label>Nombre y apellido:</label>
         <input type="text" placeholder="juan perez" tabindex="1"/>
         <label>Correo electrónico</label>
