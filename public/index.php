@@ -2,7 +2,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Grupo3PAW\App\Controllers\PageController;
+use Paw\App\Controllers\PageController;
+use Paw\App\Controllers\ErrorController;
 
 $whoops = new \Whoops\Run;
 $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
@@ -26,11 +27,11 @@ if ($path == '/'){
     $controller->valores();
 } else if ($path == '/noticias'){
     $controller->noticias();
-} else if ($path == '/obrasocial'){
-   $controller->obrasocial();
-} else if ($path == '/especialidadesprofesionales'){
+} else if ($path == '/obra-social'){
+    $controller->obrasocial();
+} else if ($path == '/especialidades-profesionales'){
     $controller->especialidadesprofesionales();
 } else {
-    http_response_code(404);
-    require __DIR__ . '/../src/not-found.view.php';
+    $controller =  new ErrorController;
+    $controller->notFound();
 }

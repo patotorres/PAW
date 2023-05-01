@@ -10,44 +10,15 @@
   </head>
 
   <body>
-    <!--header-->
-    <header>
-      <h1>
-        <a href="index.html"></a>
-        <form class="Buscador">
-          <input type="text" id="search" name="search" placeholder=" Escribe aquí tu búsqueda" class="search-box"/>
-          <input class="lupa" type="submit" value="&#128269;" class="search-box"/>
-        </form>
-      </h1>
-    </header>
+   <!--header-->
+   <?php
+      require 'parts/header.view.php';
+    ?>
     <!--header-->
     <!--navbar-->
-    <nav>
-      <input id="hamburgerMenu" type="checkbox" name="">
-      <label for="hamburgerMenu" class="hamburgerMenu"></label>
-      <!--
-      <img class="hamburgerMenu" src="img/menu-icon.svg"  />
-      -->
-      <ul>
-        <li class ="navbarDropOption">
-          <a>Turnos</a>
-          <ul>
-            <li><a href="consultarturno.html">Consultar Turno</a></li>
-            <li><a href="solicitarturno.html">Solicitar Turnos</a></li>
-          </ul>
-        </li>
-        <li class ="navbarDropOption">
-          <a>Institucional</a>
-          <ul class ="navbarDropOption">
-            <li><a href="staff.html">Staff</a></li>
-            <li><a href="valores.html">Valores</a></li>
-          </ul>
-        </li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="obra-social.html">Obra Social</a></li>
-        <li><a href="especialidades-profesionales.html">Especialidades y profesionales</a></li>
-      </ul>
-    </nav>
+    <?php
+      require 'parts/nav.view.php';
+    ?>
     <!--navbar-->
     <!--body-->
     <main>
@@ -144,30 +115,9 @@ Amet purus gravida quis blandit turpis cursus in hac habitasse. Aliquet risus fe
     </main>
     <!--body-->
     <!--footer-->
-    <footer>
-      <li class="certificadoFooter">
-        <p>Avalado por</p>
-        <a class="logoCertificadoFooter" href="https://www.argentina.gob.ar/salud"target=_blank></a>    
-      </li>
-      <li class="contactoFooter">
-        <p>Contacto</p>
-        <address>
-          <ul>
-            <li><a class="mail" href="mailto:juanperez@email.com">Correo electrónico: juanperez@email.com</a></li>
-            <li>Teléfono: +1 (555) 555-5555</li>
-            <li>Dirección: 123 Calle Principal, Luján, 6700</li>
-          </ul>  
-        </address>
-      </li>
-      <li class="redesFooter">
-        <p>Redes</p>
-        <ul>
-          <a href="https://instagram.com"target=_blank><img src="img/instagram.png" width="48" height="48" /></a>
-          <a href="https://twitter.com"target=_blank><img src="img/twitter.png" width="48" height="48" /></a>
-          <a href="https://facebook.com"target=_blank><img src="img/facebook.png" width="48" height="48" /></a>
-        </ul>
-      </li>
-    </footer>
+    <?php
+      require 'parts/footer.view.php';
+    ?>
     <!--footer-->
   </body>
 </html>
