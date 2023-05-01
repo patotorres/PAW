@@ -22,7 +22,7 @@
     <!--navbar-->
     <!--body-->
     <main class="confirmarturno"><h2>Confirmar datos</h2>
-      <form action="solicitarturno.html">
+      <form action="solicitarturno">
         <label>Nombre y apellido:</label>
         <p>juan perez</p> 
         <label>Correo electrónico:</label>
@@ -41,8 +41,8 @@
           <p>Psiquiatria</p>
         <label>Profesional:</label>
           <p>JorgeMartinez</p>
-        <a class="btn" href="index.html">Cancelar</a>
-        <a class="btn" href="solicitarturno.html">Modificar datos</a>
+        <a class="btn" href="/">Cancelar</a>
+        <a class="btn" href="solicitarturno">Modificar datos</a>
         <input type="submit" value="Confirmar"/>
       </form>
     </main>

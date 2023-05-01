@@ -29,7 +29,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
         <li>
@@ -38,7 +38,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
         <li>
@@ -47,7 +47,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
         <li>
@@ -56,7 +56,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
         <li>
@@ -65,7 +65,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
         <li>
@@ -74,7 +74,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
         <li>
@@ -83,7 +83,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
         <li>
@@ -92,7 +92,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
         <li>
@@ -101,7 +101,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
         <li>
@@ -110,7 +110,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
         <li>
@@ -119,7 +119,7 @@
             <small>12/4/23</small>
             <img src="img/noticiaej.png" width="89" height="89" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa consequatur quam laboriosam reiciendis laudantium iusto nam quo iste eius repellat consequuntur, unde fuga recusandae minima temporibus debitis dolorem magnam.</p>
-            <a class="vermas" href="noticias.html" target="_self">ver más</a>
+            <a class="vermas" href="noticias" target="_self">ver más</a>
           </article>
         </li>
       </ul>

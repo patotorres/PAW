@@ -8,7 +8,7 @@ class ErrorController
 
     public function __construct()
     {
-        $this->viewsDir = __DIR__ ."/../views/";
+        $this->viewsDir = __DIR__ ."/../Views/";
         $this->menu=[
             [
                 "href"=>"/",

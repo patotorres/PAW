@@ -22,7 +22,7 @@
     <!--navbar-->
     <!--body-->
     <main class="formulario"><h2>Solicitar Turno</h2>
-      <form action="confirmardatos.html" tabindex="0">
+      <form action="confirmardatos" tabindex="0">
         <label>Nombre y apellido:</label>
         <input type="text" placeholder="juan perez" tabindex="1"/>
         <label>Correo electrónico</label>
@@ -56,7 +56,7 @@
         <label>Hora del turno</label>
         <input type="time" tabindex="9"/>
         <div class="form-buttons">
-          <a class="btn" href="index.html" tabindex="11">Cancelar</a>
+          <a class="btn" href="/" tabindex="11">Cancelar</a>
           <input type="submit" value="Confirmar" tabindex="10" >
         </div>
       </form>
