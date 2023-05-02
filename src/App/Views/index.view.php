@@ -26,7 +26,7 @@
         <h2>Solicitar Turno</h2>
         <form action="solicitarturno" method="POST" tabindex="0">
           <label>Nombre y Apellido</label>
-          <input name="nombre-apellido" type="text" placeholder="Ej: Pedro alvarez" tabindex="1" />
+          <input name="nombre_apellido" type="text" placeholder="Ej: Pedro alvarez" tabindex="1" />
           <label>Dirección de correo electrónico</label>
           <input name="email" type="text" placeholder="Ej: Pedrialva@gmail.com" tabindex="2" />
           <label for="listaEspecialidades">Escoja una especialidad</label>
@@ -48,7 +48,7 @@
             <option value="Dr. Juan Rodríguez">Dr. Juan Rodríguez</option>
           </datalist>
           <label>Fechas disponibles</label>
-          <input name="fecha-turno" type="date" tabindex="5" />
+          <input name="fecha_turno" type="date" tabindex="5" />
         <!--
         <select id="fecha" name="fecha">
                   <option value=""selected hidden disabled>Seleccione</option>

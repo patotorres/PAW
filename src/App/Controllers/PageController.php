@@ -57,8 +57,27 @@ class PageController extends BaseController
     public function solicitarturnoProcess()
     {
         $formulario = $_POST;
-        //hay que hacer algo con estos datos
-        $this->solicitarturno();
+        $var_names = [
+            'nombre_apellido',
+            'email',
+            'especialidad',
+            'profesional',
+            'fecha_turno',
+        ];
+        $data = [];
+        foreach ($var_names as $var_name) {
+            if (isset($formulario[$var_name])) {
+                $data[$var_name] = htmlspecialchars($formulario[$var_name]);
+            } 
+        }
+        $regex = '/^\d{4}-\d{2}-\d{2}$/';
+        if (!preg_match($regex,$data['fecha_turno'])) {
+            $data['fecha_turno']=null;
+        }
+        if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+            $data['email']=null;
+        }
+       parent::showView('solicitarturno.view.php',$data);
     }
 
     public function confirmardatosProcess()

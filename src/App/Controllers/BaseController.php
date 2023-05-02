@@ -12,8 +12,9 @@ class BaseController
         $this->viewsDir = __DIR__ . "/../Views/";
     }
 
-    protected function showView(String $view)
+    protected function showView(String $view,array $data = [])
     {
+        extract($data);
         require $this->viewsDir . $view;
     }
 }
