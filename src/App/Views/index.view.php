@@ -26,12 +26,12 @@
         <h2>Solicitar Turno</h2>
         <form action="solicitarturno" method="POST" tabindex="0">
           <label>Nombre y Apellido</label>
-          <input type="text" placeholder="Ej: Pedro alvarez" tabindex="1"/>
+          <input name="nombre-apellido" type="text" placeholder="Ej: Pedro alvarez" tabindex="1" />
           <label>Dirección de correo electrónico</label>
-          <input type="text" placeholder="Ej: Pedrialva@gmail.com" tabindex="2"/>
+          <input name="email" type="text" placeholder="Ej: Pedrialva@gmail.com" tabindex="2" />
           <label for="listaEspecialidades">Escoja una especialidad</label>
-          <input list="listaEspecialidades" />
-          <datalist id="listaEspecialidades" tabindex="3">
+          <input name="especialidad" list="listaEspecialidades" tabindex="3" />
+          <datalist id="listaEspecialidades">
             <option value=""selected hidden disabled>Seleccione</option>
             <option value="Psiquiatria">Psiquiatría</option>
             <option value="Ortopedia">Ortopedía</option>
@@ -39,8 +39,8 @@
             <option value="Cardiologia">Cardiología</option>
           </datalist>
           <label for="listaProfesionales">Escoja un/a profesional</label>
-          <input list="listaProfesionales"/>
-          <datalist id="listaProfesionales" tabindex="4">
+          <input name="profesional" list="listaProfesionales"  tabindex="4" />
+          <datalist id="listaProfesionales">
             <option value=""selected hidden disabled>Seleccione</option>
             <option value="Dra. Ana García">Dra. Ana García</option>
             <option value="Dr. Jorge Martínez">Dr. Jorge Martínez</option>
@@ -48,7 +48,7 @@
             <option value="Dr. Juan Rodríguez">Dr. Juan Rodríguez</option>
           </datalist>
           <label>Fechas disponibles</label>
-          <input type="date" tabindex="5"/>
+          <input name="fecha-turno" type="date" tabindex="5" />
         <!--
         <select id="fecha" name="fecha">
                   <option value=""selected hidden disabled>Seleccione</option>

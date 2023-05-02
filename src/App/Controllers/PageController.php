@@ -2,104 +2,56 @@
 
 namespace Paw\App\Controllers;
 
-class PageController
+class PageController extends BaseController
 {
-    public string $viewsDir;
-
     public function __construct()
     {
-        $this->viewsDir = __DIR__ ."/../Views/";
-        $this->menu=[
-            [
-                "href"=>"/",
-                "name"=>"Index",
-            ],
-            [
-                "href"=>"/consultarturno",
-                "name"=>"Consultar Turno",
-            ],
-            [
-                "href"=>"/solicitarturno",
-                "name"=>"Solicitar Turno",
-            ],
-            [
-                "href"=>"/confirmardatos",
-                "name"=>"Confirmar Datos",
-            ],
-            [
-                "href"=>"/staff",
-                "name"=>"Staff",
-            ],
-            [
-                "href"=>"/valores",
-                "name"=>"Valores",
-            ],
-            [
-                "href"=>"/noticias",
-                "name"=>"Noticias",
-            ],
-            [
-                "href"=>"/obrasocial",
-                "name"=>"Obra social",
-            ],
-            [
-                "href"=>"/especialidadesprofesionales",
-                "name"=>"Especialidades y profesionales",
-            ]
-        ];
+        parent::__construct();
     }
+
     public function index()
     {
-        $titulo = htmlspecialchars($_GET["nombre"]??"PAW");
-        require $this->viewsDir . 'index.view.php';
+        parent::showView('index.view.php');
     }
+
     public function consultarturno()
     {
-        $titulo = "Consultar turno";
-        $main = "Página para consultar el turno";
-        require $this->viewsDir . 'consultarturno.view.php';
+        parent::showView('consultarturno.view.php');
     }
+
     public function solicitarturno()
     {
-        $titulo = "Solicitar turno";
-        $main = "Página para solicitar el turno";
-        require $this->viewsDir . 'solicitarturno.view.php';
+        parent::showView('solicitarturno.view.php');
     }
+
     public function confirmardatos()
     {
-        $titulo = "Confirmar datos";
-        $main = "Página para confirmar datos";
-        require $this->viewsDir . 'confirmardatos.view.php';
+        parent::showView('confirmardatos.view.php');
     }
+
     public function staff()
     {
-        $titulo = "Staff";
-        $main = "Página para ver al Staff";
-        require $this->viewsDir . 'staff.view.php';
+        parent::showView('staff.view.php');
     }
+
     public function valores()
     {
-        $titulo = "Valores";
-        $main = "Página para ver los valores";
-        require $this->viewsDir . 'valores.view.php';
+        parent::showView('valores.view.php');
     }
+
     public function noticias()
     {
-        $titulo = "Noticias";
-        $main = "Página para ver las noticias";
-        require $this->viewsDir . 'noticias.view.php';
+        parent::showView('noticias.view.php');
     }
+
     public function obrasocial()
     {
-        $titulo = "Obra Social";
-        $main = "Página para ver las obras sociales";
-        require $this->viewsDir . 'obra-social.view.php';
+        parent::showView('obra-social.view.php');
     }
+
     public function especialidadesprofesionales()
     {
-        $titulo = "Especialidades y Profesionales";
-        $main = "Página para ver las especialidades y los profesionales";
-        require $this->viewsDir . 'especialidades-profesionales.view.php';
+        parent::showView('especialidades-profesionales.view.php');
     }
 
     public function solicitarturnoProcess()
@@ -114,6 +66,16 @@ class PageController
         $formulario = $_POST;
         //hay que hacer algo con estos datos
         $this->confirmardatos();
+    }
+
+    public function confirmarturnoProcess()
+    {
+        $formulario = $_POST;
+    }
+
+    public function consultarturnoProcess()
+    {
+        $formulario = $_POST;
     }
 
 }

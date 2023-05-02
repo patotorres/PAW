@@ -20,9 +20,9 @@
     <!--navbar-->
     <!--body-->
     <main class="grilla"><h2>Especialidades y profesionales</h2>
-      <form>
+      <form method="GET">
         <label for="listaEspecialidades">Escoja una especialidad</label>
-        <input list="listaEspecialidades">
+        <input name="especialidad" list="listaEspecialidades">
         <datalist id="listaEspecialidades">
           <option value="" selected hidden disabled>Seleccione</option>
           <option value="Psiquiatria">Psiquiatría</option>
@@ -32,7 +32,7 @@
         </datalist>
 
         <label for="listaProfesionales">Escoja un/a profesional</label>
-        <input list="listaProfesionales">
+        <input name="profesional" list="listaProfesionales">
         <datalist id="listaProfesionales">
           <option value="" selected hidden disabled>Seleccione</option>
           <option value="AnaGarcia">Dra. Ana García</option>

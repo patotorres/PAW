@@ -22,17 +22,17 @@
     <main class="formulario"><h2>Solicitar Turno</h2>
       <form action="confirmardatos" method="POST" tabindex="0">
         <label>Nombre y apellido:</label>
-        <input type="text" placeholder="juan perez" tabindex="1"/>
+        <input name="nombre-apellido" type="text" placeholder="juan perez" tabindex="1" />
         <label>Correo electrónico</label>
-        <input type="email" placeholder="juanpe@gmail.com" tabindex="2"/>
+        <input name="email" type="email" placeholder="juanpe@gmail.com" tabindex="2" />
         <label>DNI</label>
-        <input type="text" placeholder="34111111" tabindex="3"/>
+        <input name="dni" type="text" placeholder="34111111" tabindex="3" />
         <label>Teléfono:</label>
-        <input type="tel" placeholder="2323 123456" tabindex="4"/>
+        <input name="telefono" type="tel" placeholder="2323 123456" tabindex="4" />
         <label>Fecha de nacimiento:</label>
-        <input type="date" tabindex="5"/>
+        <input name="fecha-nacimiento" type="date" tabindex="5" />
         <label for="listaEspecialidades">Escoja una especialidad</label>
-        <input list="listaEspecialidades">
+        <input name="especialidad" list="listaEspecialidades" tabindex="6">
         <datalist id="listaEspecialidades">
           <option value="" selected hidden disabled>Seleccione</option>
           <option value="Psiquiatria">Psiquiatría</option>
@@ -41,7 +41,7 @@
           <option value="Cardiologia">Cardiología</option>
         </datalist>
         <label for="listaProfesionales">Escoja un/a profesional</label>
-        <input list="listaProfesionales">
+        <input name="profesional" list="listaProfesionales" tabindex="7">
         <datalist id="listaProfesionales">
           <option value="" selected hidden disabled>Seleccione</option>
           <option value="AnaGarcia">Dra. Ana García</option>
@@ -50,9 +50,9 @@
           <option value="JuanRodriguez">Dr. Juan Rodríguez</option>
         </datalist>
         <label>Fechas disponibles</label>
-        <input type="date" tabindex="8"/>
+        <input name="fecha-turno" type="date" tabindex="8"/>
         <label>Hora del turno</label>
-        <input type="time" tabindex="9"/>
+        <input name="hora" type="time" tabindex="9"/>
         <div class="form-buttons">
           <a class="btn" href="/" tabindex="11">Cancelar</a>
           <input type="submit" value="Confirmar" tabindex="10" >

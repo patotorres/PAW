@@ -9,12 +9,12 @@ $method = $_SERVER['REQUEST_METHOD'];
 $log->info("Petición a: {$method} {$path}");
 
 try {
-    $router->direct($path,$method);
+    $router->direct($path, $method);
     $log->info("Status Code:200 - {$path}");
 } catch (RouteNotFoundException $e) {
     $router->direct('not_found');
-    $log->info("Path not Found: 404 - Route Not Found",["Error"=>$e]);
-} catch (Exception $e){
+    $log->info("Path not Found: 404 - Route Not Found", ["Error" => $e]);
+} catch (Exception $e) {
     $router->direct('internal_error');
-    $log->error("Status Code: 500 - Internal Server Error", ["Error"=> $e]);
+    $log->error("Status Code: 500 - Internal Server Error", ["Error" => $e]);
 }

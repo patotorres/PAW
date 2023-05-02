@@ -20,9 +20,9 @@
     <!--navbar-->
     <!--body-->
     <main class="consultarturno"><h2>Consultar Turno</h2>
-      <form>
+      <form method="POST" action="consultarturno">
         <label>Ingrese el ID del turno:</label>
-        <input type="text" placeholder="aNYE%&+_}!2"/>
+        <input name="id-turno" type="text" placeholder="aNYE%&+_}!2"/>
         <input type="submit" value="Consultar"/>
       </form>
       <hr />

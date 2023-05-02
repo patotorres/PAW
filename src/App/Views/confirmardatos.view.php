@@ -20,7 +20,7 @@
     <!--navbar-->
     <!--body-->
     <main class="confirmarturno"><h2>Confirmar datos</h2>
-      <form action="solicitarturno">
+      <form action="confirmarturno" method="POST">
         <label>Nombre y apellido:</label>
         <p>juan perez</p> 
         <label>Correo electrónico:</label>
