@@ -24,9 +24,9 @@ class PageController extends BaseController
         parent::showView('solicitarturno.view.php');
     }
 
-    public function confirmardatos()
+    public function confirmardatos($data = null)
     {
-        parent::showView('confirmardatos.view.php');
+        parent::showView('confirmardatos.view.php',$data);
     }
 
     public function staff()
@@ -56,41 +56,36 @@ class PageController extends BaseController
 
     public function solicitarturnoProcess()
     {
-        $formulario = $_POST;
-        $var_names = [
-            'nombre_apellido',
-            'email',
-            'especialidad',
-            'profesional',
-            'fecha_turno',
-        ];
-        $data = [];
-        foreach ($var_names as $var_name) {
-            if (isset($formulario[$var_name])) {
-                $data[$var_name] = htmlspecialchars($formulario[$var_name]);
-            } 
-        }
-        $regex = '/^\d{4}-\d{2}-\d{2}$/';
-        if (!preg_match($regex,$data['fecha_turno'])) {
-            $data['fecha_turno']=null;
-        }
-        if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-            $data['email']=null;
-        }
-       parent::showView('solicitarturno.view.php',$data);
+        $data = $_POST;
+        $validator = new validator();
+        //agregar mas validaciones
+        $data = $validator->remover_specialchar($data);
+        $data['fecha_turno'] = $validator->validar_fecha($data['fecha_turno']);
+        $data['email']  = $validator->validar_email($data['email']);
+        parent::showView('solicitarturno.view.php',$data);
     }
 
     public function confirmardatosProcess()
     {
         $formulario = $_POST;
-        //hay que hacer algo con estos datos
-        $this->confirmardatos();
+        //agregar mas validaciones
+        $data = $validator->remover_specialchar($data);
+        $data['fecha_turno'] = $validator->validar_fecha($data['fecha_turno']);
+        $data['email']  = $validator->validar_email($data['email']);
+        $this->confirmardatos($formulario);
     }
 
     public function confirmarturnoProcess()
     {
         $formulario = $_POST;
+        //agregar mas validaciones
+        $data = $validator->remover_specialchar($data);
+        $data['fecha_turno'] = $validator->validar_fecha($data['fecha_turno']);
+        $data['email']  = $validator->validar_email($data['email']);
+        $formulario['enviado']=true;
+        $this->confirmardatos($formulario);
     }
+
 
     public function consultarturnoProcess()
     {

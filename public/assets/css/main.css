@@ -624,6 +624,15 @@ Confirmar turno
 .confirmarturno button {
     text-align: right;
 }
+
+.confirmarturnoprocesado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color: #025255;
+}
+
 /*
 -----------------------------
 staff / directorio / especialidades / profesionales
