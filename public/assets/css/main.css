@@ -860,6 +860,14 @@ a.btn {
     border: solid 1px #d0244a;
 } 
 
+label.dato-invalido {
+    color: #d0244a;
+}
+
+label.dato-invalido::before {
+    content: '* ';
+}
+
 @media (max-width:511px){
     footer {
         flex-direction: column;

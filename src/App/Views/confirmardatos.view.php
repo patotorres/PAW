@@ -19,39 +19,37 @@
     ?>
     <!--navbar-->
     <!--body-->
-    <?php if(!isset($enviado) ) {
-      echo '
+    <?php if(!isset($enviado) ) { ?>
       <main class="confirmarturno"><h2>Confirmar datos</h2>
         <form action="confirmarturno" method="POST">
           <label>Nombre y apellido:</label>
-          <p>juan perez</p> 
+          <p><?= $nombre_apellido ?></p> 
           <label>Correo electrónico:</label>
-          <p>juanpe@gmail.com</p>
+          <p><?= $email ?></p>
           <label>DNI:</label>
-          <p>34111111</p>
+          <p><?= $dni ?></p>
           <label>Teléfono:</label>
-          <p>2323 123456</p>
+          <p><?= $telefono ?></p>
           <label>Fecha de nacimiento:</label>
-          <p>31/03/98</p>
+          <p><?= $fecha_nacimiento ?></p>
           <label>Fecha del turno:</label>
-          <p>31/03/23</p>
+          <p><?= $fecha_turno ?></p>
           <label>Hora del turno:</label>
-          <p>09:00</p>
+          <p><?= $hora_turno ?></p>
           <label>Especialidad:</label>
-            <p>Psiquiatria</p>
+          <p><?= $especialidad ?></p>
           <label>Profesional:</label>
-            <p>JorgeMartinez</p>
+          <p><?= $profesional ?></p>
           <a class="btn" href="/">Cancelar</a>
           <a class="btn" href="solicitarturno">Modificar datos</a>
           <input type="submit" value="Confirmar"/>
         </form>
-      </main>';
-    }else{
-      echo "<section class='confirmarturnoprocesado' >
-            <p>Formulario enviado</p>
-            </section>";
-    }
-    ?>
+      </main>
+    <?php } else { ?>
+      <section class='confirmarturnoprocesado' >
+        <p>Formulario enviado</p>
+      </section>
+    <?php } ?>
     <!--body-->
     <!--footer-->
     <?php

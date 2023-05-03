@@ -1,6 +1,7 @@
 <?php
 
 namespace Paw\App\Controllers;
+use Paw\Core\Validator;
 
 class PageController extends BaseController
 {
@@ -24,9 +25,9 @@ class PageController extends BaseController
         parent::showView('solicitarturno.view.php');
     }
 
-    public function confirmardatos($data = null)
+    public function confirmardatos()
     {
-        parent::showView('confirmardatos.view.php',$data);
+        parent::showView('confirmardatos.view.php', $data);
     }
 
     public function staff()
@@ -57,35 +58,55 @@ class PageController extends BaseController
     public function solicitarturnoProcess()
     {
         $data = $_POST;
-        $validator = new validator();
+
         //agregar mas validaciones
-        $data = $validator->remover_specialchar($data);
-        $data['fecha_turno'] = $validator->validar_fecha($data['fecha_turno']);
-        $data['email']  = $validator->validar_email($data['email']);
-        parent::showView('solicitarturno.view.php',$data);
+        $data = Validator::remover_specialchar($data);
+        $data['fecha_turno'] = Validator::validar_fecha($data['fecha_turno']);
+        $data['email']  = Validator::validar_email($data['email']);
+
+        parent::showView('solicitarturno.view.php', $data);
     }
 
     public function confirmardatosProcess()
     {
-        $formulario = $_POST;
+        $data = $_POST;
+        $valido = true;
+
         //agregar mas validaciones
-        $data = $validator->remover_specialchar($data);
-        $data['fecha_turno'] = $validator->validar_fecha($data['fecha_turno']);
-        $data['email']  = $validator->validar_email($data['email']);
-        $this->confirmardatos($formulario);
+        $data = Validator::remover_specialchar($data);
+
+        if (!Validator::validar_fecha($data['fecha_turno'])) {
+            $data['fecha_turno_invalido'] = true;
+            $valido = false;
+        }
+
+        if(!Validator::validar_email($data['email'])) {
+            $data['email_invalido'] = true;
+            $valido = false;
+        }
+
+        if($valido) {
+            parent::showView('confirmardatos.view.php', $data);
+        } else {
+            parent::showView('solicitarturno.view.php', $data);
+        }
+        
     }
 
     public function confirmarturnoProcess()
     {
-        $formulario = $_POST;
-        //agregar mas validaciones
-        $data = $validator->remover_specialchar($data);
-        $data['fecha_turno'] = $validator->validar_fecha($data['fecha_turno']);
-        $data['email']  = $validator->validar_email($data['email']);
-        $formulario['enviado']=true;
-        $this->confirmardatos($formulario);
-    }
+        $data = $_POST;
 
+        //Acá hay que revalidar datos y mandar a la DB, mientras no tengamos sesiones esto queda comentado
+        //agregar mas validaciones
+        /*
+        $data = Validator::remover_specialchar($data);
+        $data['fecha_turno'] = Validator::validar_fecha($data['fecha_turno']);
+        $data['email']  = Validator::validar_email($data['email']);
+        */
+        $data['enviado'] = true;
+        parent::showView('confirmardatos.view.php', $data);      
+    }
 
     public function consultarturnoProcess()
     {
