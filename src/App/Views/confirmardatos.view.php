@@ -41,7 +41,7 @@
           <label>Profesional:</label>
           <p><?= $profesional ?></p>
           <a class="btn" href="/">Cancelar</a>
-          <a class="btn" href="solicitarturno">Modificar datos</a>
+          <a class="btn" href="solicitarturno?<?= http_build_query($_POST) ?>">Modificar datos</a>
           <input type="submit" value="Confirmar"/>
         </form>
       </main>

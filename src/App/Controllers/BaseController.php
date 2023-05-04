@@ -5,7 +5,6 @@ namespace Paw\App\Controllers;
 class BaseController
 {
     private string $viewsDir;
-    protected $log;
 
     public function __construct()
     {
