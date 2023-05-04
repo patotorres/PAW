@@ -60,7 +60,7 @@
         </datalist>
 
         <label for="estudio">Estudio</label>
-        <input type="file" name="estudio" tabindex="8">
+        <input name="estudio" type="file" accept=".png,.jpg,.jpeg,.pdf" tabindex="8">
         <?php if(isset($estudio_invalido)) { ?>
         <label class="dato-invalido"><?= $estudio_invalido ?></label>
         <?php } ?>
