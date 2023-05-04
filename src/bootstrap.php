@@ -19,8 +19,6 @@ $router->get('/', 'PageController@index');
 $router->get('/consultarturno', 'PageController@consultarturno');
 $router->get('/solicitarturno', 'PageController@solicitarturno');
 $router->post('/solicitarturno', 'PageController@solicitarturnoProcess');
-$router->get('/confirmardatos', 'PageController@confirmardatos');
-$router->post('/confirmardatos', 'PageController@confirmardatosProcess');
 $router->post('/confirmarturno', 'PageController@confirmarturnoProcess');
 $router->post('/consultarturno', 'PageController@consultarturnoProcess');
 $router->get('/staff', 'PageController@staff');

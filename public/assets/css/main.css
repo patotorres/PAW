@@ -860,8 +860,9 @@ a.btn {
     border: solid 1px #d0244a;
 } 
 
-label.dato-invalido {
+form label.dato-invalido {
     color: #d0244a;
+    margin-top: 0;
 }
 
 label.dato-invalido::before {

@@ -22,12 +22,12 @@ class PageController extends BaseController
 
     public function solicitarturno()
     {
-        parent::showView('solicitarturno.view.php');
+        parent::showView('solicitarturno.view.php', $_GET);
     }
 
     public function confirmardatos()
     {
-        parent::showView('confirmardatos.view.php', $data);
+        parent::showView('confirmardatos.view.php');
     }
 
     public function staff()
@@ -58,31 +58,35 @@ class PageController extends BaseController
     public function solicitarturnoProcess()
     {
         $data = $_POST;
-
-        //agregar mas validaciones
-        $data = Validator::remover_specialchar($data);
-        $data['fecha_turno'] = Validator::validar_fecha($data['fecha_turno']);
-        $data['email']  = Validator::validar_email($data['email']);
-
-        parent::showView('solicitarturno.view.php', $data);
-    }
-
-    public function confirmardatosProcess()
-    {
-        $data = $_POST;
         $valido = true;
 
         //agregar mas validaciones
         $data = Validator::remover_specialchar($data);
 
-        if (!Validator::validar_fecha($data['fecha_turno'])) {
-            $data['fecha_turno_invalido'] = true;
+        try {
+            Validator::validar_fecha($data['fecha_turno'], true);
+        } catch (\Exception $e) {
+            $data['fecha_turno_invalido'] = $e->getMessage();
             $valido = false;
         }
 
         if(!Validator::validar_email($data['email'])) {
-            $data['email_invalido'] = true;
+            $data['email_invalido'] = 'Correo inválido';
             $valido = false;
+        }
+
+        if(isset($_FILES['estudio']) && 
+            isset($_FILES['estudio']['size']) && 
+            ($_FILES['estudio']['size'] > 0)) {
+
+            try {
+                Validator::validar_imagen($_FILES['estudio']);
+            } catch (\Exception $e) {
+                $data['estudio_invalido'] = $e->getMessage();
+                $valido = false;
+            }
+
+            $data['estudio'] = $_FILES['estudio']['name'];
         }
 
         if($valido) {
@@ -90,22 +94,14 @@ class PageController extends BaseController
         } else {
             parent::showView('solicitarturno.view.php', $data);
         }
-        
     }
 
     public function confirmarturnoProcess()
     {
-        $data = $_POST;
+        //Acá usamos los datos de la sesión para no revalidar
+        //Hay que guardar en la db y mostrar pantalla de éxito
 
-        //Acá hay que revalidar datos y mandar a la DB, mientras no tengamos sesiones esto queda comentado
-        //agregar mas validaciones
-        /*
-        $data = Validator::remover_specialchar($data);
-        $data['fecha_turno'] = Validator::validar_fecha($data['fecha_turno']);
-        $data['email']  = Validator::validar_email($data['email']);
-        */
-        $data['enviado'] = true;
-        parent::showView('confirmardatos.view.php', $data);      
+        parent::showView('confirmardatos.view.php', [ 'enviado' => true ]);      
     }
 
     public function consultarturnoProcess()

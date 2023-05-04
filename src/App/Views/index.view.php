@@ -24,7 +24,7 @@
       <section class="formulario">
         <!--necesito usar form para pedir los datos--> 
         <h2>Solicitar Turno</h2>
-        <form action="solicitarturno" method="POST" tabindex="0">
+        <form action="solicitarturno" method="GET" tabindex="0">
           <label>Nombre y Apellido</label>
           <input name="nombre_apellido" type="text" placeholder="Ej: Pedro alvarez" tabindex="1" />
           <label>Dirección de correo electrónico</label>
