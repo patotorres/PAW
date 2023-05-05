@@ -26,9 +26,11 @@
         
         <label>Correo electrónico</label>
         <input name="email" type="email" placeholder="juanpe@gmail.com" tabindex="2" <?php if(isset($email)) { echo 'value="' . $email . '"'; } ?>/>
-        <?php if(isset($email_invalido)) {?>
-        <label class="dato-invalido"><?=$email_invalido ?></label>
-        <?php } ?>
+        <?php if(isset($email_invalido)): ?>
+          <?php foreach ($email_invalido as $error) : ?>
+            <label class="dato-invalido"><?=$error ?></label>
+          <?php endforeach; ?>
+        <?php endif; ?>
         
         <label>DNI</label>
         <input name="dni" type="number" inputmode="numeric" placeholder="34111111" tabindex="3" <?php if(isset($dni)) { echo 'value="' . $dni . '"'; } ?>/>
@@ -61,15 +63,19 @@
 
         <label for="estudio">Estudio</label>
         <input name="estudio" type="file" accept=".png,.jpg,.jpeg,.pdf" tabindex="8">
-        <?php if(isset($estudio_invalido)) { ?>
-        <label class="dato-invalido"><?= $estudio_invalido ?></label>
-        <?php } ?>
+        <?php if(isset($estudio_invalido)): ?>
+          <?php foreach ($estudio_invalido as $error) : ?>
+            <label class="dato-invalido"><?=$error ?></label>
+          <?php endforeach; ?>
+        <?php endif; ?>
 
         <label>Fechas disponibles</label>
         <input name="fecha_turno" type="date" tabindex="9" <?php if(isset($fecha_turno)) { echo 'value="' . $fecha_turno . '"'; } ?>/>
-        <?php if(isset($fecha_turno_invalido)) { ?>
-        <label class="dato-invalido"><?= $fecha_turno_invalido ?></label>
-        <?php } ?>
+        <?php if(isset($fecha_turno_invalido)): ?>
+          <?php foreach ($fecha_turno_invalido as $error) : ?>
+            <label class="dato-invalido"><?=$error ?></label>
+          <?php endforeach; ?>
+        <?php endif; ?>
         
         <label>Hora del turno</label>
         <input name="hora_turno" type="time" tabindex="10" <?php if(isset($hora_turno)) { echo 'value="' . $hora_turno . '"'; } ?>/>
