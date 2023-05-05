@@ -16,11 +16,11 @@ $whoops->register();
 
 $router = new Router;
 $router->get('/', 'PageController@index');
-$router->get('/consultarturno', 'PageController@consultarturno');
-$router->get('/solicitarturno', 'PageController@solicitarturno');
-$router->post('/solicitarturno', 'PageController@solicitarturnoProcess');
-$router->post('/confirmarturno', 'PageController@confirmarturnoProcess');
-$router->post('/consultarturno', 'PageController@consultarturnoProcess');
+$router->get('/consultarturno', 'ConsultasController@consultarturno');
+$router->get('/solicitarturno', 'ConsultasController@solicitarturno');
+$router->post('/solicitarturno', 'ConsultasController@solicitarturnoProcess');
+$router->post('/confirmarturno', 'ConsultasController@confirmarturnoProcess');
+$router->post('/consultarturno', 'ConsultasController@consultarturnoProcess');
 $router->get('/staff', 'PageController@staff');
 $router->get('/valores', 'PageController@valores');
 $router->get('/noticias', 'PageController@noticias');

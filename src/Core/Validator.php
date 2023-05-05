@@ -2,11 +2,6 @@
 
 namespace Paw\Core;
 
-use Paw\Core\Exceptions\DateNotValidException;
-use Paw\Core\Exceptions\DateFormatNotValidException;
-use Paw\Core\Exceptions\DateNotBeforeException;
-use Paw\Core\Exceptions\ExtensionNotValidException;
-
 class Validator 
 {
     private static function get_mime_type($file)
@@ -26,37 +21,41 @@ class Validator
 
     public static function validar_fecha($fecha, $notBefore = false)
     {
+        $errors = [];
+
         $regex = '/^\d{4}-\d{2}-\d{2}$/';
         if (!preg_match($regex, $fecha)) {
-            throw new DateFormatNotValidException('Formato de fecha inválido');
+            $errors[] = 'Formato de fecha inválido';
+        } else {
+            $valores = explode('-', $fecha);
+            if (!checkdate($valores[1], $valores[2], $valores[0]))
+                $errors[] = 'Fecha inválida';
+
+            if($notBefore) {
+                $date = strtotime(date('Y-m-d', strtotime($fecha)));
+                $currentDate = strtotime(date('Y-m-d'));
+
+                if($date < $currentDate)
+                    $errors[] = 'La fecha ingresada debe ser posterior a la fecha actual';
+            }
         }
 
-        $valores = explode('-', $fecha);
-        if (!checkdate($valores[1], $valores[2], $valores[0]))
-            throw new DateNotValidException('Fecha inválida');
-
-        if($notBefore) {
-            $date = strtotime(date('Y-m-d', strtotime($fecha)));
-            $currentDate = strtotime(date('Y-m-d'));
-
-            if($date < $currentDate)
-                throw new DateNotBeforeException('La fecha ingresada debe ser posterior a la fecha actual');
-        }
-
-        return true;
+        return $errors;
     }
 
     public static function validar_email($email)
     {
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            return null;
-        }
+        $errors = [];
 
-        return $email;
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL))
+            $errors[] = 'E-mail inválido';
+
+        return $errors;
     }
 
     public static function validar_imagen($file)
     {
+        $errors = [];
         $allowed_image_extension = array(
             "png",
             "jpg",
@@ -66,11 +65,23 @@ class Validator
         
         $file_extension = pathinfo($file["name"], PATHINFO_EXTENSION);
 
-        foreach([$file_extension, explode("/", Validator::get_mime_type($file['tmp_name']))[1]] as $ext)
-            if (!in_array($ext, $allowed_image_extension))
-                throw new ExtensionNotValidException('Formato no soportado, la imagen sólo puede ser '.implode(", ", $allowed_image_extension));
+        if (!in_array($file_extension, $allowed_image_extension))
+            $errors[] = 'Formato no soportado, la imagen sólo puede ser '.implode(", ", $allowed_image_extension);
 
-        return true;
+        $allowed_mime_types = array(
+            "image/png",
+            "image/jpeg",
+            "application/pdf",
+            "application/x-bzpdf",
+            "application/x-gzpdf"
+        );
+        
+        $mime_type = Validator::get_mime_type($file['tmp_name']);
+
+        if (!in_array($mime_type, $allowed_mime_types))
+            $errors[] = 'Formato no soportado, la imagen sólo puede ser '.implode(", ", $allowed_image_extension);
+
+        return $errors;
     }
 
     public static function remover_specialchar($data)
@@ -81,7 +92,5 @@ class Validator
         }
         
         return $escapedData;
-    }
-
-    
+    }   
 }
