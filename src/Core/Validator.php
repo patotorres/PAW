@@ -9,21 +9,16 @@ use Paw\Core\Exceptions\ExtensionNotValidException;
 
 class Validator 
 {
-    //Hay que habilitar una extension, en una app de produccion hay que hacerlo
     private static function get_mime_type($file)
     {
         $mtype = false;
 
         if (function_exists('finfo_open')) {
-            echo 'existe';
             $finfo = finfo_open(FILEINFO_MIME_TYPE);
             $mtype = finfo_file($finfo, $file);
             finfo_close($finfo);
         } elseif (function_exists('mime_content_type')) {
-            echo 'existe este otro';
             $mtype = mime_content_type($file);
-        } else {
-            echo 'no existe';
         }
 
         return $mtype;
@@ -56,6 +51,7 @@ class Validator
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             return null;
         }
+
         return $email;
     }
 
@@ -70,8 +66,9 @@ class Validator
         
         $file_extension = pathinfo($file["name"], PATHINFO_EXTENSION);
 
-        if (!in_array($file_extension, $allowed_image_extension))
-            throw new ExtensionNotValidException('Formato no soportado, la imagen sólo puede ser '.implode(", ", $allowed_image_extension));
+        foreach([$file_extension, explode("/", Validator::get_mime_type($file['tmp_name']))[1]] as $ext)
+            if (!in_array($ext, $allowed_image_extension))
+                throw new ExtensionNotValidException('Formato no soportado, la imagen sólo puede ser '.implode(", ", $allowed_image_extension));
 
         return true;
     }
