@@ -407,14 +407,17 @@ NOTICIAS
     float: left;
     width: 50%;
 }
+
 .noticias small {
     float: initial;
     color: #a04928;
 }
+
 .noticias li {
     list-style: none;
     padding-bottom: 3em;
 }
+
 .noticias .vermas {
     float: right;
     margin: 1em 0;
@@ -708,9 +711,11 @@ Obra social
     grid-template-columns: auto auto auto;
     padding: 0;
 }
+
 .obrasocial a {
     text-decoration: none;
 }
+
 .obrasocial li {
     list-style: none;
     text-align: center;
@@ -765,35 +770,47 @@ FOOTER
 -----------------------------
 */
 footer {
+    display: inline-block;
     width: 100%;
     position: relative;
     background-color:#025255;
     margin: 0;
-    margin-top: 20px;
-    padding: 0.01px; /*para que no haya espacios en blanco debajo del footer*/
-    display: flex;
+    padding: 0px; /*para que no haya espacios en blanco debajo del footer*/
+    padding-bottom: 15px;
+    justify-content: space-between;
     text-align: center;
-    align-items: flex-start;
-    justify-content: space-between;}
+}
+
+footer ul {
+    margin: 0;
+    padding: 0 20px;
+}
+
+footer > ul > li {
+    display: inline-block;
+}
+
+footer ul li h4 {
+    text-align: center;
+    margin: 0.75em 0;
+}
 
 .certificadoFooter {
-    display: flex;
-    flex-direction: column;
     color: #fcc444;
-    margin-left: 0.5em;
+    float: left;
 }
 
 .contactoFooter {
     text-align: start;
-    display: flex;
     align-items: center;
-    flex-direction: column;
     color: #fcc444;
 }
 
 .contactoFooter ul {
-    list-style:none;
+    list-style: none;
+    max-width: 370px;
 }
+
 .mail {
     color: #fcc444;
     text-decoration: none;
@@ -812,14 +829,16 @@ footer {
     margin-bottom: 0.1em;
 
 }
+
 .redesFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     color: #fcc444;
-    margin-right: 5%;
+    float: right;
+}
 
+.redesFooter ul li {
+    list-style-type: none;
+    display: inline;
 }
 
 .logoCertificadoFooter {
@@ -828,6 +847,55 @@ footer {
     width: 175px;
     background-size: 100%;
     background-repeat: no-repeat;
+    display: inline-block;
+}
+
+@media(max-width: 800px) {
+    footer .redesFooter ul li {
+        display: list-item;
+    }
+}
+
+@media(max-width: 700px) {
+    footer .contactoFooter ul {
+       max-width: 320px;
+    }
+}
+
+@media(max-width: 680px) {
+    footer .contactoFooter ul {
+       max-width: 280px;
+    }
+}
+
+@media(max-width: 640px) {
+    footer .contactoFooter ul {
+       max-width: 100%;
+    }
+
+    footer ul {
+        max-width: 100%;
+    }
+
+    footer ul li {
+        display: inline-block;
+    }
+
+    footer .redesFooter ul li {
+        display: inline;
+    }
+
+    footer .certificadoFooter {
+        float: none;
+    }
+
+    footer .redesFooter {
+        float: none;
+    }
+
+    footer .contactoFooter {
+        text-align: center;
+    }
 }
 
 .btn {
@@ -869,6 +937,7 @@ label.dato-invalido::before {
     content: '* ';
 }
 
+/*
 @media (max-width:511px){
     footer {
         flex-direction: column;
@@ -883,6 +952,7 @@ label.dato-invalido::before {
         padding-left: 0em;
     }
 }
+*/
 
 /*
 -----------------------------
