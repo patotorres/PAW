@@ -4,6 +4,7 @@ namespace Paw\Core;
 
 class Validator 
 {
+
     private static function get_mime_type($file)
     {
         $mtype = false;
@@ -19,7 +20,43 @@ class Validator
         return $mtype;
     }
 
-    public static function validar_fecha($fecha, $notBefore = false)
+    public static function validar_nombre_apellido($nombreApellido)
+    {
+        $errors = [];
+
+        $eles = explode(" ", $nombreApellido);
+        if(count($eles) < 2) {
+            $errors[] = "Debe haber al menos un nombre y un apellido";
+        }
+
+        return $errors;
+    }
+
+    public static function validar_dni($dni)
+    {
+        $errors = [];
+        if(!is_numeric($dni)) {
+            $errors[] = "El DNI sólo puede contener números";
+        }
+
+        if(strlen($dni) != 8) {
+            $errors[] = "El DNI debe tener 8 caracteres";
+        }
+
+        return $errors;
+    }
+
+    public static function validar_telefono($tel)
+    {
+        $errors = [];
+        if(!is_numeric($tel)) {
+            $errors[] = "El número de teléfono sólo puede contener números";
+        }
+
+        return $errors;
+    }
+
+    public static function validar_fecha($fecha, $notBefore = false, $notAfter = false)
     {
         $errors = [];
 
@@ -38,7 +75,26 @@ class Validator
                 if($date < $currentDate)
                     $errors[] = 'La fecha ingresada debe ser posterior a la fecha actual';
             }
+
+            if($notAfter) {
+                $date = strtotime(date('Y-m-d', strtotime($fecha)));
+                $currentDate = strtotime(date('Y-m-d'));
+
+                if($date > $currentDate)
+                    $errors[] = 'La fecha ingresada debe ser previa a la fecha actual';
+            }
         }
+
+        return $errors;
+    }
+
+    public static function validar_hora($hora)
+    {
+        $errors = [];
+
+        $pattern = "/^([0-1][0-9]|2[0-3])\:([0-5][0-9])$/";
+        if(!preg_match($pattern, $hora))
+            $errors[] = "Hora inválida";
 
         return $errors;
     }
@@ -88,9 +144,20 @@ class Validator
     {
         $escapedData = array();
         foreach ($data as $key => $value) {
-            $escapedData[$key] = filter_var($value, FILTER_SANITIZE_SPECIAL_CHARS);
+            $escapedData[$key] = trim(filter_var($value, FILTER_SANITIZE_SPECIAL_CHARS));
         }
         
         return $escapedData;
-    }   
+    }
+
+    public static function limpiar_espacios($data)
+    {
+        $eles = explode(" ", trim($data));
+        $ret = "";
+        foreach($eles as $ele)
+            if(strlen($ele) > 0)
+                $ret .= " " . $ele;
+
+        return ltrim($ret);
+    }
 }

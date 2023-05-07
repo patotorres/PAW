@@ -33,6 +33,31 @@ class ConsultasController extends BaseController
         //agregar mas validaciones
         $data = Validator::remover_specialchar($data);
 
+        $data['nombre_apellido'] = Validator::limpiar_espacios($data['nombre_apellido']);
+        $errors = Validator::validar_nombre_apellido($data['nombre_apellido']);
+        if(count($errors) > 0) {
+            $data['nombre_apellido_invalido'] = $errors;
+            $valido = false;
+        }
+
+        $errors = Validator::validar_dni($data['dni']);
+        if(count($errors) > 0) {
+            $data['dni_invalido'] = $errors;
+            $valido = false;
+        }
+
+        $errors = Validator::validar_telefono($data['telefono']);
+        if(count($errors) > 0) {
+            $data['telefono_invalido'] = $errors;
+            $valido = false;
+        }
+
+        $errors = Validator::validar_fecha($data['fecha_nacimiento'], false, true);
+        if(count($errors) > 0) {
+            $data['fecha_nacimiento_invalido'] = $errors;
+            $valido = false;
+        }
+
         $errors = Validator::validar_fecha($data['fecha_turno'], true);
         if(count($errors) > 0) {
             $data['fecha_turno_invalido'] = $errors;
@@ -54,6 +79,12 @@ class ConsultasController extends BaseController
                 $data['estudio_invalido'] = $errors;
                 $valido = false;
             }
+        }
+
+        $errors = Validator::validar_hora($data['hora_turno']);
+        if(count($errors) > 0) {
+            $data['hora_turno_invalido'] = $errors;
+            $valido = false;
         }
 
         if($valido) {
