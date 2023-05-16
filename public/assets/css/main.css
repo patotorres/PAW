@@ -783,6 +783,11 @@ footer {
 
 footer ul {
     margin: 0;
+    padding: 0;
+}
+
+footer > ul {
+    margin: 0;
     padding: 0 20px;
 }
 
@@ -827,7 +832,6 @@ footer ul li h4 {
 .redesFooter p {
     margin-left: 2.5em;
     margin-bottom: 0.1em;
-
 }
 
 .redesFooter {
@@ -850,25 +854,25 @@ footer ul li h4 {
     display: inline-block;
 }
 
-@media(max-width: 800px) {
-    footer .redesFooter ul li {
-        display: list-item;
+@media(max-width: 800px) and (min-width: 621px) {
+    footer .redesFooter ul {
+        max-width: 110px;
     }
 }
 
 @media(max-width: 700px) {
     footer .contactoFooter ul {
-       max-width: 320px;
+       max-width: 330px;
     }
 }
 
 @media(max-width: 680px) {
     footer .contactoFooter ul {
-       max-width: 280px;
+       max-width: 270px;
     }
 }
 
-@media(max-width: 640px) {
+@media(max-width: 620px) {
     footer .contactoFooter ul {
        max-width: 100%;
     }
@@ -878,11 +882,7 @@ footer ul li h4 {
     }
 
     footer ul li {
-        display: inline-block;
-    }
-
-    footer .redesFooter ul li {
-        display: inline;
+        display: block;
     }
 
     footer .certificadoFooter {
