@@ -20,7 +20,7 @@
     <!--navbar-->
     <!--body-->
     <main class="obrasocial"><h2>Trabajamos con las siguientes obras sociales</h2>
-      <ul>
+      <ul class="carousel" id="carousel">
         <li>
           <a href="https://osde.com.ar" target="_blank">
             <p>obra social ejemplo</p>
