@@ -745,7 +745,14 @@ SolicitarTurno
     max-width: 200px;
     max-height: 200px;
   }
+  #dropzone{
+    border: dashed 4px transparent;
+    transition: border-color 0.2s ease;
+  }
 
+  #dropzone.dragover {
+    border: dashed 4px black;
+  }
 /*
 .form-buttons input[type="submit"], .form-buttons input[type="reset"] {
     display: inline;
