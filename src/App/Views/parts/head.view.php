@@ -5,4 +5,4 @@
 <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
 
 <script src="/assets/js/app.js"></script>
-<script src="/assets/js/components/PAW.js"></script>
+<script src="/assets/js/components/paw.js"></script>
