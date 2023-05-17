@@ -17,10 +17,6 @@ class PAWcarousel {
         this.userInteracted = false;
 
         this.animaciones = [
-            'fade',
-            'fadeIn',
-            'swashIn',
-            'slidein',
             'moveRight',
             'foolishIn'
         ]
@@ -201,13 +197,6 @@ class PAWcarousel {
 
             function slideShow() {
                 if (change > 0) {
-                    /* container.scrollLeft += width;
-                     if (container.scrollLeft > (width * (slides.length - 2))) {
-                         width = 0;
-                         container.scrollLeft = width;
-                         width = slides[0].offsetWidth + 30;
-                     }
-                     */
                     show_slide(++slider_index)
 
                 } else {

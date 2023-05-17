@@ -5,6 +5,7 @@
     <?php
       require 'parts/head.view.php';
     ?>
+    <script src="/assets/js/app.js"></script>
   </head>
 
   <body>
