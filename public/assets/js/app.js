@@ -11,12 +11,12 @@ class appPAW {
         document.addEventListener("DOMContentLoaded", () => {
           PAW.cargarScript("PAWcarousel", "assets/js/components/PAWcarousel.js", () => {
 			let Imagenes =[
-				"/assets/images/portadas/obrasocialej.png",
-				"/assets/images/portadas/obrasocialej.png",
-				"/assets/images/portadas/obrasocialej.png",
-				"/assets/images/portadas/obrasocialej.png",
+				"/assets/img/obrasocialej.png",
+				"/assets/img/obrasocialej.png",
+				"/assets/img/obrasocialej.png",
+				"/assets/img/obrasocialej.png",
 			]
-			let carousel = new PAWcarousel(Imagenes,"#carousel");
+			let carousel = new PAWcarousel(Imagenes,"#container");
 			});
         });
     }
