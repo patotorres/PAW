@@ -5,6 +5,7 @@
     <?php
       require 'parts/head.view.php';
     ?>
+     <script src="/assets/js/components/appDragDrop.js"></script>
   </head>
 
   <body>
@@ -82,7 +83,8 @@
         </datalist>
 
         <label for="estudio">Estudio</label>
-        <input name="estudio" type="file" accept=".png,.jpg,.jpeg,.pdf" tabindex="8">
+        <input id="dropzone" name="estudio" type="file" accept=".png,.jpg,.jpeg" tabindex="8">
+        <div id="preview"> </div>
         <?php if(isset($estudio_invalido)): ?>
           <?php foreach ($estudio_invalido as $error) : ?>
             <label class="dato-invalido"><?=$error ?></label>
