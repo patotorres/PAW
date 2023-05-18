@@ -150,7 +150,7 @@ class PAWcarousel {
 
 
             let width = slides[0].offsetWidth + 30;
-            contenedorGeneral.style.minWidth = `${slides.length * width}px`;
+            //contenedorGeneral.style.minWidth = `${slides.length * width}px`;
             // Eventos de teclado
             document.addEventListener("keydown", function (e) {
                 switch (e.which) {

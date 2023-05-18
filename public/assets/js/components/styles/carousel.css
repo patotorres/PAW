@@ -8,12 +8,13 @@
     mix-blend-mode: darken;
     grid-area: carrusel;
     margin-bottom: 9.5vh;
+    display: inline-flex;
 }
 
 .slide {
-    min-width: 100%;
     height: 100%;
-    display: flex;
+    display: block;
+    margin: auto;
 }
 
 .foolishIn {
