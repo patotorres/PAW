@@ -1,4 +1,4 @@
-.container {
+.slide-container {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -6,15 +6,9 @@
     cursor: pointer;
     padding: 5px;
     mix-blend-mode: darken;
-    grid-area: carrusel;
     margin-bottom: 9.5vh;
-    display: inline-flex;
-}
-
-.slide {
-    height: 100%;
     display: block;
-    margin: auto;
+    text-align: center;
 }
 
 .foolishIn {
@@ -27,11 +21,15 @@
     animation-duration: 1.8s;
 }
 
-
-.slide .box {
+.slide-container .box {
     height: 50vh;
     overflow: hidden;
     width: 50vh;
+    display: none;
+}
+
+.slide-container .box.active {
+    display: inline-block;
 }
 
 .box img {
@@ -42,8 +40,6 @@
     height: 50vh;
     width: 50vh;
 }
-
-
 
 .slider-arrow {
     color: var(--principal-color2);
@@ -63,6 +59,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
 .slider img {
     width: 100%;
     height: 100%;
@@ -76,19 +73,18 @@
     position: absolute;
 }
 
-
-#arrow-prev {
+.arrow-prev {
     left: 40px;
     top: 23vh;
 }
 
-#arrow-next {
+.arrow-next {
     right: 0vw;
     top: 23vh;
 }
 
-#dots-wrapper {
-    display: flex;
+.dots-wrapper {
+    /*display: flex;*/
     position: absolute;
     bottom: 30px;
 }
@@ -99,17 +95,18 @@
     border-radius: 100%;
     cursor: pointer;
     margin: 0 8px;
-    border: none;
+    background-color: #a04928;
+    display: inline-block;
+    list-style: none;
 }
 
 .dot-nav:hover {
-    background-color: #a04928;
+    background-color: #fcc444;
 }
 
 .active-dot {
     background-color: #fcc444;
 }
-
 
 .progressBar, .progress {
     position: absolute;
@@ -118,13 +115,11 @@
     width: 100vw;
     height: 1vh;
     text-decoration: none;
-
 }
 
 .progressBar {
     background-color: #f71818;
 }
-
 
 .progress {
     transition: width 1s;
@@ -141,7 +136,6 @@
         transform: translateX(50px);
     }
 }
-
 
 @keyframes foolishIn {
     0% {
@@ -175,6 +169,7 @@
         transform: scale(1, 1) rotate(0deg);
     }
 }
+
 @media (prefers-color-scheme: dark) {
     .container {
         width: 100%;

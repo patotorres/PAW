@@ -20,60 +20,8 @@
     ?>
     <!--navbar-->
     <!--body-->
-    <main class="obrasocial"><h2>Trabajamos con las siguientes obras sociales</h2>
-    <?php
-      require 'parts/carousel.view.php';
-    ?>  
-    <!--<ul class="carousel" id="">
-        <li id="">
-          <a href="https://osde.com.ar" target="_blank">
-            <p>obra social ejemplo</p>
-            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
-          </a>
-        </li>
-        <li id="slide-container">
-          <a href="https://osde.com.ar" target="_blank">
-            <p>obra social ejemplo</p>
-            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
-          </a>
-        </li>
-        <li>
-          <a href="https://osde.com.ar" target="_blank">
-            <p>obra social ejemplo</p>
-            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
-          </a>
-        </li>
-        <li>
-          <a href="https://osde.com.ar" target="_blank">
-            <p>obra social ejemplo</p>
-            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
-          </a>
-        </li>
-        <li>
-          <a href="https://osde.com.ar" target="_blank">
-            <p>obra social ejemplo</p>
-            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
-          </a>
-        </li>
-        <li>
-          <a href="https://osde.com.ar" target="_blank">
-            <p>obra social ejemplo</p>
-            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
-          </a>
-        </li>
-        <li>
-          <a href="https://osde.com.ar" target="_blank">
-            <p>obra social ejemplo</p>
-            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
-          </a>
-        </li>
-        <li>
-          <a href="https://osde.com.ar" target="_blank">
-            <p>obra social ejemplo</p>
-            <img src="/assets/img/obrasocialej.png" width="89" height="89" />
-          </a>
-        </li>
-      </ul>-->
+    <main class="obrasocial">
+      <h2>Trabajamos con las siguientes obras sociales</h2>
     </main>
     <!--body-->
     <!--footer-->

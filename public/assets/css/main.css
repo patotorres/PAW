@@ -702,26 +702,6 @@ Valores
 
 /*
 -----------------------------
-Obra social
------------------------------
-*/
-.obrasocial ul {
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 0;
-}
-
-.obrasocial a {
-    text-decoration: none;
-}
-
-.obrasocial li {
-    list-style: none;
-    text-align: center;
-}
-/*
------------------------------
 SolicitarTurno
 -----------------------------
 */
