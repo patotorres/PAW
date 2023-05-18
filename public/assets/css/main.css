@@ -702,26 +702,6 @@ Valores
 
 /*
 -----------------------------
-Obra social
------------------------------
-*/
-.obrasocial ul {
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 0;
-}
-
-.obrasocial a {
-    text-decoration: none;
-}
-
-.obrasocial li {
-    list-style: none;
-    text-align: center;
-}
-/*
------------------------------
 SolicitarTurno
 -----------------------------
 */
@@ -741,8 +721,24 @@ SolicitarTurno
 .form-buttons {
     text-align: right;
 }
+#preview > img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  #dropzone{
+    border: dashed 4px transparent;
+    transition: border-color 0.2s ease;
+  }
 
-/*
+  #dropzone.dragover {
+    border: dashed 4px black;
+  }
+  .preview-img:hover{
+    filter:sepia(100%);
+  }
+ 
+
+  /*
 .form-buttons input[type="submit"], .form-buttons input[type="reset"] {
     display: inline;
     border-radius: 0;

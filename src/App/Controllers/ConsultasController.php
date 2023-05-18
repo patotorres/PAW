@@ -70,16 +70,24 @@ class ConsultasController extends BaseController
             $valido = false;
         }
 
-        if(isset($_FILES['estudio']) && 
-            isset($_FILES['estudio']['size']) && 
-            ($_FILES['estudio']['size'] > 0)) {
-
-            $errors = Validator::validar_imagen($_FILES['estudio']);
+        $files = $_FILES['estudio'];
+        if(isset($files)){
+        for ($i = 0; $i < count($files['name']); $i++) {
+            $file = [
+                'name' => $files['name'][$i],
+                'type' => $files['type'][$i],
+                'tmp_name' => $files['tmp_name'][$i],
+                'error' => $files['error'][$i],
+                'size' => $files['size'][$i]
+            ];
+            $errors = Validator::validar_imagen($file);
             if(count($errors) > 0) {
                 $data['estudio_invalido'] = $errors;
                 $valido = false;
             }
-        }
+        }}
+      
+
 
         $errors = Validator::validar_hora($data['hora_turno']);
         if(count($errors) > 0) {

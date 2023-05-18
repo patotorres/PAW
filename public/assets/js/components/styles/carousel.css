@@ -1,0 +1,187 @@
+.slide-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    mix-blend-mode: darken;
+    margin-bottom: 9.5vh;
+    display: block;
+    text-align: center;
+}
+
+.foolishIn {
+    animation-name: foolishIn;
+    animation-duration: 1.8s;
+}
+
+.moveRight {
+    animation-name: moveRight;
+    animation-duration: 1.8s;
+}
+
+.slide-container .box {
+    height: 50vh;
+    overflow: hidden;
+    width: 50vh;
+    display: none;
+}
+
+.slide-container .box.active {
+    display: inline-block;
+}
+
+.box img {
+    justify-content: center;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    height: 50vh;
+    width: 50vh;
+}
+
+.slider-arrow {
+    color: var(--principal-color2);
+    font-size: 55px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.center_y {
+    position: relative;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.center_x {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-arrow {
+    color: #d0244a;
+    font-size: 55px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.arrow-prev {
+    left: 40px;
+    top: 23vh;
+}
+
+.arrow-next {
+    right: 0vw;
+    top: 23vh;
+}
+
+.dots-wrapper {
+    /*display: flex;*/
+    position: absolute;
+    bottom: 30px;
+}
+
+.dot-nav {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 0 8px;
+    background-color: #a04928;
+    display: inline-block;
+    list-style: none;
+}
+
+.dot-nav:hover {
+    background-color: #fcc444;
+}
+
+.active-dot {
+    background-color: #fcc444;
+}
+
+.progressBar, .progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 1vh;
+    text-decoration: none;
+}
+
+.progressBar {
+    background-color: #f71818;
+}
+
+.progress {
+    transition: width 1s;
+    --ancho: 0;
+    width: var(--ancho);
+    background-color: #f44336;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes foolishIn {
+    0% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(0, 0) rotate(360deg);
+    }
+    20% {
+        opacity: 1;
+        transform-origin: 0% 100%;
+        transform: scale(0.5, 0.5) rotate(0deg);
+    }
+    40% {
+        opacity: 1;
+        transform-origin: 100% 100%;
+        transform: scale(0.5, 0.5) rotate(0deg);
+    }
+    60% {
+        opacity: 1;
+        transform-origin: 0%;
+        transform: scale(0.5, 0.5) rotate(0deg);
+    }
+    80% {
+        opacity: 1;
+        transform-origin: 0% 0%;
+        transform: scale(0.5, 0.5) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1, 1) rotate(0deg);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        /* top: 10px; */
+        /* left: 50%; */
+        /* transform: translateX(-50%); */
+        cursor: pointer;
+        padding: 5px;
+        mix-blend-mode: difference;
+        grid-area: carrusel;
+    }
+ }
