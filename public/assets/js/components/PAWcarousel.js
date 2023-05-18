@@ -201,7 +201,7 @@ class PAWcarousel {
                 if (change > 0) {
                     show_slide(++slider_index)
 
-                } else {
+                } else if (change < 0) {
                     show_slide(--slider_index)
                 }
             }
