@@ -179,7 +179,7 @@ class PAWcarousel {
             slideContainer.addEventListener('dragover', (e) => {
                 e.preventDefault();
                 let touch = e.clientX;
-                change = start - touch;
+                change = touch - start;
             })
 
             slideContainer.addEventListener('dragend', slideShow);
@@ -192,7 +192,7 @@ class PAWcarousel {
             slideContainer.addEventListener('touchmove', (e) => {
                 e.preventDefault();
                 let touch = e.touches[0];
-                change = start - touch.clientX;
+                change = touch.clientX - start;
             })
 
             slideContainer.addEventListener('touchend', slideShow);

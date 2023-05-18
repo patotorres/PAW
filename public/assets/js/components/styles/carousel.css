@@ -89,9 +89,9 @@
 }
 
 .dots-wrapper {
-    /*display: flex;*/
     position: absolute;
     bottom: 30px;
+    padding: 0;
 }
 
 .dot-nav {
