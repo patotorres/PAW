@@ -5,16 +5,38 @@ constructor(){
     const preview = document.getElementById('preview');
 
 dropzone.addEventListener('change', function() {
-    const file = this.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.readAsDataURL(file);
-        reader.onload = () => {
-          const img = document.createElement("img");
-          img.src = reader.result;
-          preview.innerHTML = "";
-          preview.appendChild(img);
-        };
+   const files = event.target.files;
+
+    // Iterar sobre cada archivo
+    for (const file of files) {
+        // Mostrar una vista previa de la imagen
+        if (file.type.match('image.*')) {
+            
+          const preview = document.getElementById('preview');
+          const images = preview.querySelectorAll('img');
+          for (let i = 0; i < images.length; i++) {
+            images[i].remove();
+          }  
+            const reader = new FileReader();
+            reader.addEventListener('load', (event) => {
+                const img = document.createElement('img');
+                img.setAttribute('src', event.target.result);
+                img.classList.add('preview-img');
+                img.addEventListener('click', function() {
+                    this.parentNode.removeChild(this);
+                    const fileList = dropzone.files;
+                    for (let i = 0; i < fileList.length; i++) {
+                      if (fileList[i].name === file.name && fileList[i].size === file.size) {
+                        fileList.splice(i, 1);
+                        break;
+                      }
+                    }
+                  });
+                preview.appendChild(img);
+            });
+
+            reader.readAsDataURL(file);
+        }
     }
 });
 // Manejadores de eventos para prevenir comportamientos predeterminados
@@ -39,25 +61,34 @@ dropzone.addEventListener('drop', (e) => {
   e.preventDefault();
   e.stopPropagation();
 
-  // Se obtiene el archivo que se ha soltado en el elemento
-  const file = e.dataTransfer.files[0];
-
-  // Se comprueba si el archivo es válido (extensión y tamaño)
-  if (validateFile(file)) {
     // Se asigna el archivo al elemento de entrada de tipo archivo
     const input = document.getElementById('dropzone');
-    input.files = e.dataTransfer.files;
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => {
-      const img = document.createElement("img");
-      img.src = reader.result;
-      preview.innerHTML = "";
-      preview.appendChild(img);
-    };
-  } else {
-    alert('Archivo no válido');
-  }
+    const files = e.dataTransfer.files;
+    for (const file of files) {
+     if (file.type.match('image.*')) {
+      
+      
+      const fileInput = document.getElementById('dropzone');
+      const existingFiles = fileInput.files;
+      const newFile = file;
+      const dataTransfer = new DataTransfer();
+      Array.from(existingFiles).forEach((file) => {
+        dataTransfer.items.add(file);
+      });
+      dataTransfer.items.add(newFile);
+      fileInput.files = dataTransfer.files;
+      
+           
+            const reader = new FileReader();
+            reader.addEventListener('load', (event) => {
+                const img = document.createElement('img');
+                img.setAttribute('src', event.target.result);
+                img.classList.add('preview-img');
+                preview.appendChild(img);
+            });
+
+            reader.readAsDataURL(file);
+        }}
   dropzone.classList.remove("dragover");
 });
 

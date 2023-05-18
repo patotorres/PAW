@@ -83,7 +83,7 @@
         </datalist>
 
         <label for="estudio">Estudio</label>
-        <input id="dropzone" name="estudio" type="file" accept=".png,.jpg,.jpeg" tabindex="8">
+        <input id="dropzone" name="estudio[]" type="file" accept=".png,.jpg,.jpeg" tabindex="8" multiple>
         <div id="preview"> </div>
         <?php if(isset($estudio_invalido)): ?>
           <?php foreach ($estudio_invalido as $error) : ?>
