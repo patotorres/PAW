@@ -17,6 +17,7 @@ class PAWcarousel {
         this.userInteracted = false;
 
         this.animaciones = [
+            'fade',
             'moveRight',
             'foolishIn'
         ]
