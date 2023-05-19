@@ -82,7 +82,7 @@
           <option value="Dr. Carlos López">
         </datalist>
 
-        <button onclick="cargarDiasYHorarios()">Cargar días y horarios</button>
+        <button class="dias-horarios">Cargar días y horarios</button>
         <label  for="fecha_turno">Fechas disponibles</label>
         <select name="fecha_turno" id="fecha_turno" tabindex="9"></select>
         <label for="hora_turno">Hora del turno</label>

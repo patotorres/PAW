@@ -102,6 +102,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const diasSelect = document.getElementById("fecha_turno");
       const horariosSelect = document.getElementById("hora_turno");
   
+      document.querySelector("button.dias-horarios").addEventListener("click", (e) => {
+        e.preventDefault();
+        cargarDiasYHorarios();
+      });
+
       function cargarDiasYHorarios() {
         const medicoSeleccionado = medicoInput.value;
         const medico = especialistas.find(especialista => especialista.nombre === medicoSeleccionado);
