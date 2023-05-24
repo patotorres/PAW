@@ -1,4 +1,5 @@
 class appPAW {
+	URL_BASE = "http://localhost:8080"
 	constructor() {
         //Inicializar la funcionalidad Menu
         //document.addEventListener("DOMContentLoaded", () => {
@@ -21,6 +22,14 @@ class appPAW {
 					];
 
 					let carousel = new PAWcarousel(Imagenes, contenedor);
+				});
+			}
+
+			contenedor = document.querySelector("main.sala-espera");
+
+			if (contenedor) {
+				PAW.cargarScript("SalaEspera", "assets/js/components/SalaEspera.js", () => {
+					let sala = new SalaEspera(contenedor, this.URL_BASE);
 				});
 			}
 		});

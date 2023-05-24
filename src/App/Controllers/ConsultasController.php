@@ -114,4 +114,42 @@ class ConsultasController extends BaseController
     {
         $formulario = $_POST;
     }
+
+    public function salaEspera()
+    {
+        if( isset($_GET['type']) && ($_GET['type'] == 'json')) {
+            $json = [
+                "tiempo_estimado" => 15,
+                "lista_turnos" => [[
+                    "id" => "ASC-011",
+                    "consultorio" => 2,
+                    "nombre" => "María Rosa",
+                    "apellido" => "Leguizamón"
+                ], [
+                    "id" => "FKX-546",
+                    "consultorio" => 3,
+                    "nombre" => "Martín",
+                    "apellido" => "Robledo"
+                ], [
+                    "id" => "REZ-369",
+                    "consultorio" => 2,
+                    "nombre" => "Robert Wojciech",
+                    "apellido" => "Zelazek"
+                ], [
+                    "id" => "FHU-654",
+                    "consultorio" => 4,
+                    "nombre" => "Mariano",
+                    "apellido" => "De La Canal"
+                ], [
+                    "id" => "SRG-981",
+                    "consultorio" => 8,
+                    "nombre" => "Eduardo",
+                    "apellido" => "Schmidt"
+                ]]
+            ];
+            return parent::json($json);
+        }
+
+        parent::showView('salaespera.view.php');
+    }
 }

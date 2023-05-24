@@ -1,3 +1,17 @@
+:root {
+    --primary-green: #025255;
+    --primary-yellow: #fcc444;
+    --primary-red: #d0244a;
+    --primary-blue: #009dda;
+
+    --second-light-brown: #a04928;
+    --second-brown: #5b2b19;
+    --second-light-blue: #87d3e2;
+    --second-light-green: #718839;
+    --second-grey: #3b4a5a;
+    --second-light-grey: #eef1ef;
+}
+
 * {
     line-height: 1em;
 }
@@ -1062,3 +1076,90 @@ Modo oscuro
     }
 
  }
+
+body:has(> main.sala-espera) {
+    background-color: var(--primary-green);
+    font-size: 2.5em;
+}
+
+/*
+main.sala-espera p.tiempo-espera {
+    position: absolute;
+    bottom: 0;
+    color: var(--second-light-grey);
+}
+*/
+
+main.sala-espera > ul > li:nth-child(-n + 3) {
+    display: inline-block;
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--second-light-brown);
+}
+
+main.sala-espera > ul > li:first-child {
+    width: 7ch;
+    text-align: end;
+}
+
+main.sala-espera > ul > li:nth-child(2) {
+    width: 12ch;
+}
+
+main.sala-espera > ul > li:nth-child(3) {
+    width: calc(100% - 19ch);
+}
+
+main.sala-espera {
+    height: calc(100vh - 40px);
+    margin: 20px 40px;
+}
+
+main.sala-espera li {
+    list-style: none;
+    text-align: center;
+}
+
+main.sala-espera ul {
+    /*max-height: calc(100vh - 3em);*/
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+main.sala-espera > ul > li > ul > li {
+    display: inline-block;
+    padding: 0.5em 0;
+}
+
+main.sala-espera > ul > li > ul > li:first-child {
+    width: 7ch;
+}
+
+main.sala-espera > ul > li > ul > li:nth-child(2) {
+    width: 3ch;
+}
+
+main.sala-espera > ul > li > ul > li:nth-child(3) {
+    width: calc(100% - 10ch);
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow-x: clip;
+    white-space: nowrap;
+}
+
+main.sala-espera > ul > li {
+    border-radius: 15px;
+    background-color: var(--primary-yellow);
+    margin-bottom: 0.5em;
+}
+
+main.sala-espera > ul > li:nth-child(4) > ul {
+    font-size: 1.5em;
+}
+
+main.sala-espera > ul > li:nth-child(4) {
+    background-color: var(--primary-red);
+    font-weight: bolder;
+}

@@ -19,4 +19,9 @@ class BaseController
 
         require $this->viewsDir . $view;
     }
+
+    protected function json($data)
+    {
+        echo json_encode($data);
+    }
 }
