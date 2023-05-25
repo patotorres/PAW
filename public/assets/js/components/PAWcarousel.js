@@ -21,6 +21,7 @@ class PAWcarousel {
             'moveRight',
             'foolishIn'
         ]
+
         let contenedor = pContenedor.tagName ? pContenedor : document.querySelector(pContenedor);
 
         if (contenedor) {

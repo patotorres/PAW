@@ -33,3 +33,5 @@ $router->get('/especialidades-profesionales', 'PageController@especialidadesprof
 $router->get('not_found', 'ErrorController@notFound');
 $router->get('internal_error', 'ErrorController@internalError');
 $router->get("/sala-espera", "ConsultasController@salaEspera");
+$router->get("/atender-turnos", "ConsultasController@turnos");
+$router->get("/finalizar-turno", "ConsultasController@finalizar");

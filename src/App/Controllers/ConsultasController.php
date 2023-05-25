@@ -152,4 +152,50 @@ class ConsultasController extends BaseController
 
         parent::showView('salaespera.view.php');
     }
+
+    public function turnos()
+    {
+        if( isset($_GET['type']) && ($_GET['type'] == 'json')) {
+            $json = [
+                "lista_turnos" => [[
+                    "id" => "ASC-011",
+                    "horario" => "08:00",
+                    "nombre" => "María Rosa",
+                    "apellido" => "Leguizamón"
+                ], [
+                    "id" => "FKX-546",
+                    "horario" => "09:00",
+                    "nombre" => "Martín",
+                    "apellido" => "Robledo"
+                ], [
+                    "id" => "REZ-369",
+                    "horario" => "09:30",
+                    "nombre" => "Robert Wojciech",
+                    "apellido" => "Zelazek"
+                ], [
+                    "id" => "FHU-654",
+                    "horario" => "10:00",
+                    "nombre" => "Mariano",
+                    "apellido" => "De La Canal"
+                ], [
+                    "id" => "SRG-981",
+                    "horario" => "12:00",
+                    "nombre" => "Eduardo",
+                    "apellido" => "Schmidt"
+                ]]
+            ];
+            return parent::json($json);
+        }
+
+        parent::showView('atenderturnos.view.php');
+    }
+
+    public function finalizar()
+    {
+        $id = isset($_GET['id'])? $_GET['id'] : null;
+
+        if($id) {
+            //Finalizar turno en la DB/modelo
+        }
+    }
 }
