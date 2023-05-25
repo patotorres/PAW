@@ -6,6 +6,7 @@
       require 'parts/head.view.php';
     ?>
      <script src="/assets/js/components/appDragDrop.js"></script>
+     <script src="/assets/js/components/turnero.js"></script>
   </head>
 
   <body>
@@ -71,16 +72,21 @@
           <option value="Neurologia">Neurología</option>
           <option value="Cardiologia">Cardiología</option>
         </datalist>
-       
-        <label for="listaProfesionales">Escoja un/a profesional</label>
-        <input name="profesional" list="listaProfesionales" tabindex="7" <?php if(isset($profesional)) { echo 'value="' . $profesional . '"'; } ?>>
+      
+        <label for="listaProfesional">Escoja un/a profesional</label>
+        <input type="text" id="listaProfesional" list="listaProfesionales" tabindex="7">
         <datalist id="listaProfesionales">
           <option value="" selected hidden disabled>Seleccione</option>
-          <option value="AnaGarcia">Dra. Ana García</option>
-          <option value="JorgeMartinez">Dr. Jorge Martínez</option>
-          <option value="VeroSanchez">Dra. Verónica Sánchez</option>
-          <option value="JuanRodriguez">Dr. Juan Rodríguez</option>
+          <option value="Dr. Juan Pérez">
+          <option value="Dra. María Gómez">
+          <option value="Dr. Carlos López">
         </datalist>
+
+        <button class="dias-horarios">Cargar días y horarios</button>
+        <label  for="fecha_turno">Fechas disponibles</label>
+        <select name="fecha_turno" id="fecha_turno" tabindex="9"></select>
+        <label for="hora_turno">Hora del turno</label>
+        <select name="hora_turno"  id="hora_turno" tabindex="10"></select>
 
         <label for="estudio">Estudio</label>
         <input id="dropzone" name="estudio[]" type="file" accept=".png,.jpg,.jpeg" tabindex="8" multiple>
@@ -91,22 +97,9 @@
           <?php endforeach; ?>
         <?php endif; ?>
 
-        <label>Fechas disponibles</label>
-        <input name="fecha_turno" type="date" tabindex="9" <?php if(isset($fecha_turno)) { echo 'value="' . $fecha_turno . '"'; } ?>/>
-        <?php if(isset($fecha_turno_invalido)): ?>
-          <?php foreach ($fecha_turno_invalido as $error) : ?>
-            <label class="dato-invalido"><?=$error ?></label>
-          <?php endforeach; ?>
-        <?php endif; ?>
         
-        <label>Hora del turno</label>
-        <input name="hora_turno" type="time" tabindex="10" <?php if(isset($hora_turno)) { echo 'value="' . $hora_turno . '"'; } ?>/>
-        <?php if(isset($hora_turno_invalido)): ?>
-          <?php foreach ($hora_turno_invalido as $error) : ?>
-            <label class="dato-invalido"><?=$error ?></label>
-          <?php endforeach; ?>
-        <?php endif; ?>
-
+        
+        
         <div class="form-buttons">
           <a class="btn" href="/" tabindex="12">Cancelar</a>
           <input type="submit" value="Confirmar" tabindex="11" >
