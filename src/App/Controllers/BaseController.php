@@ -16,7 +16,6 @@ class BaseController
         if (isset($data)) {
             extract($data);
         }
-
         require $this->viewsDir . $view;
     }
 

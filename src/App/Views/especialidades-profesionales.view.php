@@ -5,6 +5,10 @@
     <?php
       require 'parts/head.view.php';
     ?>
+    <script>
+    var data = <?php echo json_encode($data); ?>;
+  </script>
+  <script src="assets/js/components/filtro.js"></script>
   </head>
 
   <body>
@@ -20,6 +24,7 @@
     <!--navbar-->
     <!--body-->
     <main class="grilla"><h2>Especialidades y profesionales</h2>
+     
       <form method="GET">
         <label for="listaEspecialidades">Escoja una especialidad</label>
         <input name="especialidad" list="listaEspecialidades">
@@ -35,79 +40,26 @@
         <input name="profesional" list="listaProfesionales">
         <datalist id="listaProfesionales">
           <option value="" selected hidden disabled>Seleccione</option>
-          <option value="AnaGarcia">Dra. Ana García</option>
-          <option value="JorgeMartinez">Dr. Jorge Martínez</option>
-          <option value="VeroSanchez">Dra. Verónica Sánchez</option>
-          <option value="JuanRodriguez">Dr. Juan Rodríguez</option>
+          <?php foreach ($data as $persona): ?>
+              <option value="<?php echo $persona["nombre"]; ?>"><?php echo $persona["nombre"]; ?></option>
+          <?php endforeach; ?>
         </datalist>
 
         <input type="submit" value="Continuar" />
       </form>
       
       <hr />
-      <ul>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
-        <li>
-          <img src="/assets/img/personaej.png" width="48" height="48" />
-          <p>Nombre</p>
-          <p>Rango</p>
-        </li>
+      <div class="paginar">
+          <label> Personas por pagina</label>
+          <input id="cantPaginas" type="number" value="6" />
+          <button id="pagAnt" > < </button>
+          <label> Pag.</label>
+          <input id="paginaIndice" type="number" value="1" min="0"/>
+          <button id="pagSig"  > > </button>
+      </div>
+      <ul id="listaPersonas">
       </ul>
-
+        
     </main>
     <!--body-->
     <!--footer-->
